@@ -13,7 +13,7 @@ class ODriveUART:
         self.lock = threading.Lock()  # Ensure thread safety
         print(f"[INFO] Connected to ODrive on {port} at {baud_rate} baud.")
     
-    def send_feedback_command(self, command):
+    def _send_feedback_command(self, command): # --> validated
         """
         Sends a command to the ODrive and retrieves the response.
         """
@@ -26,7 +26,7 @@ class ODriveUART:
             return response.decode(errors='ignore').strip()
         return None
     
-    def send_command(self, command):
+    def _send_command(self, command): # --> validated
         """
         Sends a command to the ODrive and retrieves the response.
         """
@@ -35,7 +35,7 @@ class ODriveUART:
             self.ser.write(full_command.encode())  # Send command
         return None
     
-    def _wait_for_response(self):
+    def _wait_for_response(self): # --> validated
         """
         Waits for data to become available from the serial port.
         Returns the data once received.
@@ -47,11 +47,11 @@ class ODriveUART:
         response = self.ser.read(self.ser.in_waiting)
         return response
     
-    def get_vbus_voltage(self):
+    def get_vbus_voltage(self): # --> validated
         """
         Requests the bus voltage from the ODrive.
         """
-        response = self.send_feedback_command("r vbus_voltage")
+        response = self._send_feedback_command("r vbus_voltage")
         if response:
             try:
                 return float(response)
@@ -59,11 +59,11 @@ class ODriveUART:
                 print(f"[ERROR] Invalid voltage response from {self.port}: {response}")
         return None
     
-    def get_joint_position(self):
+    def get_joint_position(self): # --> validated
         """
         Requests the position estimate of a given axis (0 or 1).
         """
-        response = self.send_feedback_command("r axis0.pos_estimate")
+        response = self._send_feedback_command("r axis0.pos_estimate")
         if response:
             try:
                 return float(response)
@@ -71,32 +71,41 @@ class ODriveUART:
                 print(f"[ERROR] Invalid position response from {self.port}: {response}")
         return None
     
-    def get_active_errors(self):
-        response = self.send_feedback_command("r axis0.active_errors")
+    def get_active_errors(self): # --> validated
+        response = self._send_feedback_command("r axis0.active_errors")
         if response:
             try:
                 return response
             except ValueError:
                 print(f"[ERROR] Invalid error response from {self.port}: {response}")
         return None
+
+    def is_armed(self):
+        response = self._send_feedback_command("r axis0.active_errors")
+        if response:
+            try:
+                return bool(response)
+            except ValueError:
+                print(f"[ERROR] Invalid error response from {self.port}: {response}")
+        return None
     
-    def reboot(self):
+    def reboot(self): # --> works with the "self.get_active_errors()" workaround (as a first 'dummy' command)
         """
         Roboot the Odrive
         """
-        self.send_command("sr")
+        self._send_command("sr")
         print(f"[INFO] Odrive at {self.port} rebooting")
         return self.get_active_errors()
     
-    def clear_errors(self):
+    def clear_errors(self): # --> validated
         """
         Clear all errors in the Odrive
         """
-        self.send_command("sc")
+        self._send_command("sc")
         print(f"[INFO] Odrive at {self.port} errors cleared")
         return None
     
-    def close(self):
+    def close(self): # --> validated
         """
         Closes the UART connection.
         """
@@ -112,8 +121,8 @@ if __name__ == "__main__":
 
     if test_mode:
 
-        print(f"current active errors 1: {odrive1.get_active_errors()}")
-        print(f"current active errors 2: {odrive2.get_active_errors()}")
+        print(f"current arming state 1: {odrive1.is_armed()}")
+        print(f"current arming state 2: {odrive2.is_armed()}")
 
         time.sleep(1)
 
