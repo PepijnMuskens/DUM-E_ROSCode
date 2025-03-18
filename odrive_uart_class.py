@@ -80,15 +80,36 @@ class ODriveUART:
                 print(f"[ERROR] Invalid error response from {self.port}: {response}")
         return None
 
-    def is_armed(self):
-        response = self._send_feedback_command("r axis0.active_errors")
+    def is_armed(self): # --> validated
+        response = self._send_feedback_command("r axis0.is_armed")
         if response:
             try:
-                return bool(response)
+                return bool(int(response))
             except ValueError:
                 print(f"[ERROR] Invalid error response from {self.port}: {response}")
         return None
     
+    def move(self, target_pos=0.0):
+        self._send_command(f"t 0 {self.get_joint_position() + target_pos}")
+        print(f"[INFO] Odrive at {self.port} moving to {self.get_joint_position() + target_pos}")
+        return None
+  
+    def arm(self):
+        """
+        Arms the motor connected to this controller
+        """
+        self._send_command("w axis0.requested_state 8")
+        print(f"[INFO] Odrive at {self.port} arming")
+        return None
+    
+    def disarm(self):
+        """
+        Disarms the motor connected to this controller
+        """
+        self._send_command("w axis0.requested_state 1")
+        print(f"[INFO] Odrive at {self.port} disarming")
+        return None
+
     def reboot(self): # --> works with the "self.get_active_errors()" workaround (as a first 'dummy' command)
         """
         Roboot the Odrive
@@ -121,23 +142,22 @@ if __name__ == "__main__":
 
     if test_mode:
 
+        odrive1.clear_errors()
+
+        print(odrive1.arm())
+
+        odrive1.get_active_errors()
+        
+
+        time.sleep(5)
+
+        odrive1.clear_errors()
+
         print(f"current arming state 1: {odrive1.is_armed()}")
         print(f"current arming state 2: {odrive2.is_armed()}")
 
-        time.sleep(1)
-
-        print(f"current active errors 1: {odrive1.get_active_errors()}")
-        print(f"current active errors 2: {odrive2.get_active_errors()}")
-
-        time.sleep(1)
-        
-        odrive1.clear_errors()
-        odrive2.clear_errors()
-
-        time.sleep(1)
-
-        print(f"current active errors 1: {odrive1.get_active_errors()}")
-        print(f"current active errors 2: {odrive2.get_active_errors()}")
+        time.sleep(3)
+        #odrive1.disarm()
 
         time.sleep(1)
 
