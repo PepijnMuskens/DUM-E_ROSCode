@@ -1,5 +1,6 @@
 import serial
 import threading
+import time
 
 class ODriveUART:
     def __init__(self, port, baud_rate=115200):
@@ -12,7 +13,7 @@ class ODriveUART:
         self.lock = threading.Lock()  # Ensure thread safety
         print(f"[INFO] Connected to ODrive on {port} at {baud_rate} baud.")
     
-    def send_command(self, command):
+    def send_feedback_command(self, command):
         """
         Sends a command to the ODrive and retrieves the response.
         """
@@ -23,6 +24,15 @@ class ODriveUART:
             
         if response:
             return response.decode(errors='ignore').strip()
+        return None
+    
+    def send_command(self, command):
+        """
+        Sends a command to the ODrive and retrieves the response.
+        """
+        full_command = f"{command}\n"  # ODrive expects newline-terminated commands
+        with self.lock:
+            self.ser.write(full_command.encode())  # Send command
         return None
     
     def _wait_for_response(self):
@@ -41,7 +51,7 @@ class ODriveUART:
         """
         Requests the bus voltage from the ODrive.
         """
-        response = self.send_command("r vbus_voltage")
+        response = self.send_feedback_command("r vbus_voltage")
         if response:
             try:
                 return float(response)
@@ -49,23 +59,11 @@ class ODriveUART:
                 print(f"[ERROR] Invalid voltage response from {self.port}: {response}")
         return None
     
-    def get_joint_position(self, axis=0):
+    def get_joint_position(self):
         """
         Requests the position estimate of a given axis (0 or 1).
         """
-        response = self.send_command("r axis0.encoder.pos_estimate")
-        if response:
-            try:
-                return response
-            except ValueError:
-                print(f"[ERROR] Invalid position response from {self.port}: {response}")
-        return None
-    
-    def reboot(self):
-        """
-        Roboot the Odrive
-        """
-        response = self.send_command("sr")
+        response = self.send_feedback_command("r axis0.pos_estimate")
         if response:
             try:
                 return float(response)
@@ -73,6 +71,30 @@ class ODriveUART:
                 print(f"[ERROR] Invalid position response from {self.port}: {response}")
         return None
     
+    def get_active_errors(self):
+        response = self.send_feedback_command("r axis0.active_errors")
+        if response:
+            try:
+                return response
+            except ValueError:
+                print(f"[ERROR] Invalid error response from {self.port}: {response}")
+        return None
+    
+    def reboot(self):
+        """
+        Roboot the Odrive
+        """
+        self.send_command("sr")
+        print(f"[INFO] Odrive at {self.port} rebooting")
+        return self.get_active_errors()
+    
+    def clear_errors(self):
+        """
+        Clear all errors in the Odrive
+        """
+        self.send_command("sc")
+        print(f"[INFO] Odrive at {self.port} errors cleared")
+        return None
     
     def close(self):
         """
@@ -85,18 +107,44 @@ if __name__ == "__main__":
 
     odrive1 = ODriveUART("/dev/ttyUSB0")
     odrive2 = ODriveUART("/dev/ttyUSB1")
-    
 
-    try:
-        while True:
-            #print("ODrive 1 Voltage:", odrive1.get_vbus_voltage())
-            #print("ODrive 2 Voltage:", odrive2.get_vbus_voltage())
-            print("ODrive 1 Position:", odrive1.get_joint_position(0))
-            print("ODrive 2 Position:", odrive2.get_joint_position(0))
-    except KeyboardInterrupt:
-        print("Exiting...")
-    finally:
+    test_mode = True
+
+    if test_mode:
+
+        print(f"current active errors 1: {odrive1.get_active_errors()}")
+        print(f"current active errors 2: {odrive2.get_active_errors()}")
+
+        time.sleep(1)
+
+        print(f"current active errors 1: {odrive1.get_active_errors()}")
+        print(f"current active errors 2: {odrive2.get_active_errors()}")
+
+        time.sleep(1)
+        
+        odrive1.clear_errors()
+        odrive2.clear_errors()
+
+        time.sleep(1)
+
+        print(f"current active errors 1: {odrive1.get_active_errors()}")
+        print(f"current active errors 2: {odrive2.get_active_errors()}")
+
+        time.sleep(1)
+
         odrive1.close()
         odrive2.close()
 
 
+    else:
+        try:
+            while True:
+                #print("ODrive 1 Voltage:", odrive1.get_vbus_voltage())
+                #print("ODrive 2 Voltage:", odrive2.get_vbus_voltage())
+                print("ODrive 1 Position:", odrive1.get_joint_position())
+                print("ODrive 2 Position:", odrive2.get_joint_position())
+        except KeyboardInterrupt:
+            print("Exiting...")
+        finally:
+            odrive1.close()
+            odrive2.close()
