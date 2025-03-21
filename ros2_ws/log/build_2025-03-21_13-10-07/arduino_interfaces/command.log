@@ -1,0 +1,1 @@
+Invoking command in '/home/pepijn/Desktop/git/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pepijn/Desktop/git/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces -- -j12 -l12

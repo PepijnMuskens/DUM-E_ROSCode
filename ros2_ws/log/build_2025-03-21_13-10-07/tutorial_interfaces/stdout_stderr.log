@@ -1,0 +1,24 @@
+[  1%] Built target tutorial_interfaces__rosidl_generator_type_description
+[  1%] Built target ament_cmake_python_copy_tutorial_interfaces
+[  3%] Built target tutorial_interfaces__cpp
+[ 24%] Built target tutorial_interfaces__rosidl_generator_c
+[ 33%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp
+[ 42%] Built target tutorial_interfaces__rosidl_typesupport_cpp
+[ 53%] Built target tutorial_interfaces__rosidl_typesupport_c
+[ 61%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c
+[ 70%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 79%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c
+[ 79%] Built target tutorial_interfaces
+[ 81%] Built target tutorial_interfaces__py
+[ 88%] Built target tutorial_interfaces__rosidl_generator_py
+[ 92%] Built target tutorial_interfaces_s__rosidl_typesupport_c
+[ 96%] Built target tutorial_interfaces_s__rosidl_typesupport_introspection_c
+[100%] Built target tutorial_interfaces_s__rosidl_typesupport_fastrtps_c
+[0mCMake Error: The current CMakeCache.txt directory /home/pepijn/Desktop/git/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/CMakeCache.txt is different than the directory /home/pepijn/ros2_ws/build/tutorial_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+running egg_info
+writing tutorial_interfaces.egg-info/PKG-INFO
+writing dependency_links to tutorial_interfaces.egg-info/dependency_links.txt
+writing top-level names to tutorial_interfaces.egg-info/top_level.txt
+reading manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_tutorial_interfaces_egg

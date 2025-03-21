@@ -10,10 +10,11 @@ setup.py
 ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
 ../../build/py_srvcli/py_srvcli.egg-info/zip-safe
 py_srvcli/__init__.py
-py_srvcli/arduino_uart_class.py
 py_srvcli/client_arduino_function.py
 py_srvcli/service_arduino_function.py
 resource/py_srvcli
+scripts/__init__.py
+scripts/arduino_uart_class.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

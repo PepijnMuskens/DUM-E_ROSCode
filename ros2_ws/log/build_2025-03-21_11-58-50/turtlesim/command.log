@@ -1,0 +1,2 @@
+Invoking command in '/home/pepijn/Desktop/git/DUM-E_ROSCode/ros2_ws/build/turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pepijn/Desktop/git/DUM-E_ROSCode/ros2_ws/build/turtlesim -- -j12 -l12
+Invoked command in '/home/pepijn/Desktop/git/DUM-E_ROSCode/ros2_ws/build/turtlesim' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pepijn/Desktop/git/DUM-E_ROSCode/ros2_ws/build/turtlesim -- -j12 -l12

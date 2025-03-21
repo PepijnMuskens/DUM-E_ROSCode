@@ -17,6 +17,7 @@ class AruinoUART:
         """
         set arduino position  
         """
+        
         print(f"[Set positions]: M BA{baseAngle} R{rotation} ER{endRotation} EA{endAngle}")
         response = self._send_feedback_command(f"M BA{baseAngle} R{rotation} ER{endRotation} EA{endAngle}")
         if response:
