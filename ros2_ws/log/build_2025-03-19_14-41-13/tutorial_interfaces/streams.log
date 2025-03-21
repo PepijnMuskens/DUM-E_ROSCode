@@ -1,0 +1,42 @@
+[0.008s] Invoking command in '/home/pepijn/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pepijn/ros2_ws/install/py_srvcli:/home/pepijn/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pepijn/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/pepijn/ros2_ws/install/tutorial_interfaces
+[0.105s] -- The C compiler identification is GNU 13.3.0
+[0.189s] -- The CXX compiler identification is GNU 13.3.0
+[0.207s] -- Detecting C compiler ABI info
+[0.281s] -- Detecting C compiler ABI info - done
+[0.288s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.289s] -- Detecting C compile features
+[0.289s] -- Detecting C compile features - done
+[0.298s] -- Detecting CXX compiler ABI info
+[0.380s] -- Detecting CXX compiler ABI info - done
+[0.388s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.388s] -- Detecting CXX compile features
+[0.388s] -- Detecting CXX compile features - done
+[0.392s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.512s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.611s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.699s] -- Added test 'lint_cmake' to check CMake code style
+[0.700s] -- Added test 'xmllint' to check XML markup files
+[0.702s] -- Configuring done (0.7s)
+[0.705s] -- Generating done (0.0s)
+[0.707s] -- Build files have been written to: /home/pepijn/ros2_ws/build/tutorial_interfaces
+[0.711s] Invoked command in '/home/pepijn/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pepijn/ros2_ws/install/py_srvcli:/home/pepijn/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pepijn/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/pepijn/ros2_ws/install/tutorial_interfaces
+[0.712s] Invoking command in '/home/pepijn/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pepijn/ros2_ws/install/py_srvcli:/home/pepijn/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pepijn/ros2_ws/build/tutorial_interfaces -- -j12 -l12
+[0.745s] Invoked command in '/home/pepijn/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pepijn/ros2_ws/install/py_srvcli:/home/pepijn/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/pepijn/ros2_ws/build/tutorial_interfaces -- -j12 -l12
+[0.753s] Invoking command in '/home/pepijn/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pepijn/ros2_ws/install/py_srvcli:/home/pepijn/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pepijn/ros2_ws/build/tutorial_interfaces
+[0.759s] -- Install configuration: ""
+[0.760s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces
+[0.760s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces
+[0.760s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh
+[0.760s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv
+[0.760s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh
+[0.761s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv
+[0.761s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash
+[0.761s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh
+[0.761s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh
+[0.761s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv
+[0.761s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv
+[0.761s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces
+[0.762s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake
+[0.762s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake
+[0.762s] -- Installing: /home/pepijn/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml
+[0.763s] Invoked command in '/home/pepijn/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pepijn/ros2_ws/install/py_srvcli:/home/pepijn/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/pepijn/ros2_ws/build/tutorial_interfaces

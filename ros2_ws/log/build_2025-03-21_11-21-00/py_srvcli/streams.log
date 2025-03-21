@@ -1,0 +1,29 @@
+[0.667s] Invoking command in '/home/pepijn/ros2_ws/src/py_srvcli': AMENT_PREFIX_PATH=/home/pepijn/ros2_ws/install/tutorial_interfaces:/home/pepijn/ros2_ws/install/arduino_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pepijn/ros2_ws/install/tutorial_interfaces:/home/pepijn/ros2_ws/install/arduino_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/pepijn/ros2_ws/install/tutorial_interfaces/lib:/home/pepijn/ros2_ws/install/arduino_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pepijn/ros2_ws/build/py_srvcli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pepijn/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/pepijn/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/pepijn/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/pepijn/ros2_ws/build/py_srvcli/build install --record /home/pepijn/ros2_ws/build/py_srvcli/install.log --single-version-externally-managed install_data
+[0.882s] running egg_info
+[0.898s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[0.907s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[0.907s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[0.908s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[0.908s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[0.939s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[0.940s] adding license file 'LICENSE'
+[0.940s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[0.940s] running build
+[0.940s] running build_py
+[0.941s] copying py_srvcli/service_arduino_function.py -> /home/pepijn/ros2_ws/build/py_srvcli/build/lib/py_srvcli
+[0.941s] copying py_srvcli/client_arduino_function.py -> /home/pepijn/ros2_ws/build/py_srvcli/build/lib/py_srvcli
+[0.941s] running install
+[0.946s] running install_lib
+[0.962s] copying /home/pepijn/ros2_ws/build/py_srvcli/build/lib/py_srvcli/service_arduino_function.py -> /home/pepijn/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli
+[0.963s] copying /home/pepijn/ros2_ws/build/py_srvcli/build/lib/py_srvcli/client_arduino_function.py -> /home/pepijn/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli
+[0.963s] byte-compiling /home/pepijn/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli/service_arduino_function.py to service_arduino_function.cpython-312.pyc
+[0.964s] byte-compiling /home/pepijn/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli/client_arduino_function.py to client_arduino_function.cpython-312.pyc
+[0.965s] running install_data
+[0.965s] running install_egg_info
+[0.982s] removing '/home/pepijn/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli-0.0.0-py3.12.egg-info' (and everything under it)
+[0.982s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/pepijn/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli-0.0.0-py3.12.egg-info
+[0.983s] running install_scripts
+[1.093s] Installing client script to /home/pepijn/ros2_ws/install/py_srvcli/lib/py_srvcli
+[1.093s] Installing service script to /home/pepijn/ros2_ws/install/py_srvcli/lib/py_srvcli
+[1.093s] writing list of installed files to '/home/pepijn/ros2_ws/build/py_srvcli/install.log'
+[1.116s] Invoked command in '/home/pepijn/ros2_ws/src/py_srvcli' returned '0': AMENT_PREFIX_PATH=/home/pepijn/ros2_ws/install/tutorial_interfaces:/home/pepijn/ros2_ws/install/arduino_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pepijn/ros2_ws/install/tutorial_interfaces:/home/pepijn/ros2_ws/install/arduino_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/pepijn/ros2_ws/install/tutorial_interfaces/lib:/home/pepijn/ros2_ws/install/arduino_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pepijn/ros2_ws/build/py_srvcli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pepijn/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/pepijn/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/pepijn/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/pepijn/ros2_ws/build/py_srvcli/build install --record /home/pepijn/ros2_ws/build/py_srvcli/install.log --single-version-externally-managed install_data

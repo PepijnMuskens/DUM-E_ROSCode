@@ -1,0 +1,7 @@
+{
+  "package_name": "arduino_interfaces",
+  "non_idl_tuples": [
+    "/home/pepijn/ros2_ws/src/arduino_interfaces:msg/Num.msg",
+    "/home/pepijn/ros2_ws/src/arduino_interfaces:srv/SetStepperMotorPositions.srv"
+  ]
+}

@@ -1,0 +1,3 @@
+[console_scripts]
+client = py_srvcli.client_arduino_function:main
+service = py_srvcli.service_arduino_function:main

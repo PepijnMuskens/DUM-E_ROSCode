@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "arduino_interfaces__py",
+		"source" : "/home/pepijn/ros2_ws/build/arduino_interfaces/arduino_interfaces__py"
+	}
+}

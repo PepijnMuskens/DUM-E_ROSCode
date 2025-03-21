@@ -1,0 +1,12 @@
+{
+  "package_name": "arduino_interfaces",
+  "output_dir": "/home/pepijn/ros2_ws/build/arduino_interfaces/rosidl_generator_type_description/arduino_interfaces",
+  "idl_tuples": [
+    "/home/pepijn/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces:msg/Num.idl",
+    "/home/pepijn/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces:srv/SetStepperMotorPositions.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

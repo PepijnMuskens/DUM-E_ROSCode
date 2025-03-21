@@ -1,0 +1,6 @@
+int64 base_rotation
+int64 rotation
+int64 end_rotation
+int64 end_angle
+---
+int64 time_to_complete_ms

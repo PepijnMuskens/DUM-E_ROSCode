@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from arduino_interfaces/srv/SetStepperMotorPositions.srv
+// generated code does not contain a copyright notice
+
+
+module arduino_interfaces {
+  module srv {
+    struct SetStepperMotorPositions_Request {
+      int64 base_rotation;
+
+      int64 rotation;
+
+      int64 end_rotation;
+
+      int64 end_angle;
+    };
+    struct SetStepperMotorPositions_Response {
+      int64 time_to_complete_ms;
+    };
+  };
+};
