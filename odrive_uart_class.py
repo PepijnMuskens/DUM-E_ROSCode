@@ -47,7 +47,7 @@ class ODriveUART:
         response = self.ser.read(self.ser.in_waiting)
         return response
     
-    def get_vbus_voltage(self): # --> validated
+    def get_bus_voltage(self): # --> validated
         """
         Requests the bus voltage from the ODrive.
         """
@@ -59,9 +59,21 @@ class ODriveUART:
                 print(f"[ERROR] Invalid voltage response from {self.port}: {response}")
         return None
     
+    def get_bus_current(self): # --> validated
+        """
+        Requests the bus current from the ODrive.
+        """
+        response = self._send_feedback_command("r ibus")
+        if response:
+            try:
+                return float(response)
+            except ValueError:
+                print(f"[ERROR] Invalid voltage response from {self.port}: {response}")
+        return None
+    
     def get_joint_position(self): # --> validated
         """
-        Requests the position estimate of a given axis (0 or 1).
+        Requests the position estimate.
         """
         response = self._send_feedback_command("r axis0.pos_estimate")
         if response:
@@ -71,7 +83,22 @@ class ODriveUART:
                 print(f"[ERROR] Invalid position response from {self.port}: {response}")
         return None
     
+    def get_joint_velocity(self): # --> validated
+        """
+        Requests the velocity estimate.
+        """
+        response = self._send_feedback_command("r axis0.vel_estimate")
+        if response:
+            try:
+                return float(response)
+            except ValueError:
+                print(f"[ERROR] Invalid position response from {self.port}: {response}")
+        return None
+    
     def get_active_errors(self): # --> validated
+        """
+        request the active errors on the odrive (axis 0).
+        """
         response = self._send_feedback_command("r axis0.active_errors")
         if response:
             try:
@@ -79,8 +106,24 @@ class ODriveUART:
             except ValueError:
                 print(f"[ERROR] Invalid error response from {self.port}: {response}")
         return None
+    
+    def get_serial_number(self): # --> returns a unique number for each drive but different than in the UI
+        """
+        requests the serial number of the ODrive. returns decimal representation but the
+        ODrive UI shows its hexadecimal version.
+        """
+        response = self._send_feedback_command("r serial_number")
+        if response:
+            try:
+                return int(response)
+            except ValueError:
+                print(f"[ERROR] Invalid voltage response from {self.port}: {response}")
+        return None
 
     def is_armed(self): # --> validated
+        """
+        request if ODrive is armed.
+        """
         response = self._send_feedback_command("r axis0.is_armed")
         if response:
             try:
@@ -89,22 +132,70 @@ class ODriveUART:
                 print(f"[ERROR] Invalid error response from {self.port}: {response}")
         return None
     
-    def move(self, target_pos=0.0):
+    def is_homed(self):
+        """
+        request if ODrive is homed.
+        """
+        response = self._send_feedback_command("r axis0.is_homed")
+        if response:
+            try:
+                return bool(int(response))
+            except ValueError:
+                print(f"[ERROR] Invalid error response from {self.port}: {response}")
+        return None
+    
+    def set_joint_position(self, pos): # --> verified
+        """
+        sets the position estimate to the current position
+        """
+        self._send_command(f"r axis0.pos_estimate {pos}")
+        print(f"[INFO] set pos of Odrive: {self.port} to: {pos}")
+        return None
+    
+    def identify_on(self): # --> verified
+        """
+        flashes LED of the Odrive (toggle on)
+        """
+        self._send_command("w identify 1")
+        print(f"[INFO] Odrive at {self.port} identifying")
+        return None
+    
+    def identify_off(self): # --> verified
+        """
+        flashes LED of the Odrive (toggle off)
+        """
+        self._send_command("w identify 0")
+        print(f"[INFO] Odrive at {self.port} not identifying anymore")
+        return None
+
+    def move_pos(self, target_pos=0.0): # --> validated
+        """
+        move to a position setpoint (relative to estimated position).
+        """
         self._send_command(f"t 0 {self.get_joint_position() + target_pos}")
         print(f"[INFO] Odrive at {self.port} moving to {self.get_joint_position() + target_pos}")
         return None
-  
-    def arm(self):
+    
+    def home(self):
         """
-        Arms the motor connected to this controller
+        request built in homing sequence of axis 0 of the ODrive 
+        (limit swiches need to be connected)
+        """
+        self._send_command("w axis0.requested_state 11")
+        print(f"[INFO] Odrive at {self.port} arming")
+        return None
+  
+    def arm(self): # --> validated
+        """
+        Arms the motor.
         """
         self._send_command("w axis0.requested_state 8")
         print(f"[INFO] Odrive at {self.port} arming")
         return None
     
-    def disarm(self):
+    def disarm(self): # --> validated
         """
-        Disarms the motor connected to this controller
+        Disarms the motor.
         """
         self._send_command("w axis0.requested_state 1")
         print(f"[INFO] Odrive at {self.port} disarming")
@@ -133,47 +224,3 @@ class ODriveUART:
         self.ser.close()
         print(f"[INFO] Connection closed for {self.port}.")
 
-if __name__ == "__main__":
-
-    odrive1 = ODriveUART("/dev/ttyUSB0")
-    odrive2 = ODriveUART("/dev/ttyUSB1")
-
-    test_mode = True
-
-    if test_mode:
-
-        odrive1.clear_errors()
-
-        print(odrive1.arm())
-
-        odrive1.get_active_errors()
-        
-
-        time.sleep(5)
-
-        odrive1.clear_errors()
-
-        print(f"current arming state 1: {odrive1.is_armed()}")
-        print(f"current arming state 2: {odrive2.is_armed()}")
-
-        time.sleep(3)
-        #odrive1.disarm()
-
-        time.sleep(1)
-
-        odrive1.close()
-        odrive2.close()
-
-
-    else:
-        try:
-            while True:
-                #print("ODrive 1 Voltage:", odrive1.get_vbus_voltage())
-                #print("ODrive 2 Voltage:", odrive2.get_vbus_voltage())
-                print("ODrive 1 Position:", odrive1.get_joint_position())
-                print("ODrive 2 Position:", odrive2.get_joint_position())
-        except KeyboardInterrupt:
-            print("Exiting...")
-        finally:
-            odrive1.close()
-            odrive2.close()

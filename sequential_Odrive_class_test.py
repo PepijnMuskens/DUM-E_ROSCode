@@ -7,7 +7,6 @@ odrive2 = ODriveUART("/dev/ttyUSB1")
 odrive1.clear_errors()
 odrive2.clear_errors()
 
-time.sleep(0.01)
 
 print(f"current arming state 1: {odrive1.is_armed()}")
 print(f"current arming state 2: {odrive2.is_armed()}")
@@ -24,18 +23,18 @@ print(f"current arming state 2: {odrive2.is_armed()}")
 
 time.sleep(0.01)
 
-odrive1.move(-0.5)
-odrive2.move(-0.5)
+odrive1.move_pos(-0.5)
+odrive2.move_pos(0.5)
 
-time.sleep(5)
+time.sleep(3)
 
 print("ODrive 1 Position:", odrive1.get_joint_position())
 print("ODrive 2 Position:", odrive2.get_joint_position())
 
 time.sleep(0.01)
 
-odrive1.move(0.5)
-odrive2.move(0.5)
+odrive1.move_pos(0.5)
+odrive2.move_pos(-0.5)
 
 time.sleep(5)
 
