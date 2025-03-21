@@ -5,20 +5,18 @@ import rclpy
 from rclpy.node import Node
 
 
-arduino = AruinoUART("/dev/ttyUSB0")
+
 
 class MinimalService(Node):
-
+    arduino = AruinoUART
     def __init__(self):
         super().__init__('minimal_service')
         self.srv = self.create_service(SetStepperMotorPositions, 'set_steppermotor_positions', self.set_steppermotor_positions_callback)       # CHANGE
-
+        self.arduino = AruinoUART("/dev/ttyUSB0")
+    
     def set_steppermotor_positions_callback(self, request, response):
-        response.time_to_complete_ms = request.base_rotation + request.rotation + request.end_rotation   + request.end_angle                                                # CHANGE
-        self.get_logger().info('Incoming request\na: %d b: %d c: %d' % (request.base_rotation, request.rotation, request.end_rotation))  # CHANGE
-        #arduino._set_postition_(request.base_rotation,request.rotation, request.end_rotation, request.end_angle)
-        
-        arduino._set_postition_(request.base_rotation,request.rotation, request.end_rotation, request.end_angle)
+        self.get_logger().info('Incoming request\nbr: %d r: %d er: %d ea: %d' % (request.base_rotation, request.rotation, request.end_rotation, request.end_angle))  # CHANGE
+        self.arduino._set_postition_(request.base_rotation,request.rotation, request.end_rotation, request.end_angle)
         response.time_to_complete_ms = 10
         return response
 
