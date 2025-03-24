@@ -1,4 +1,4 @@
-from odrive_uart_class import ODriveUART
+from uart_classes import ODriveUART
 import time
 
 
@@ -10,14 +10,15 @@ odrive2.clear_errors()
 
 try:
     while True:
-        #print("ODrive 1 Voltage:", odrive1.get_bus_voltage())
-        #print("ODrive 2 Voltage:", odrive2.get_bus_voltage())
-        #print("ODrive 1 Position:", odrive1.get_joint_position())
-        #print("ODrive 2 Position:", odrive2.get_joint_position())
-        #print("ODrive 1 Velocity:", odrive1.get_joint_velocity())
-        #print("ODrive 2 Velocity:", odrive2.get_joint_velocity())
+        print("ODrive 1 Voltage:", odrive1.get_bus_voltage())
+        print("ODrive 2 Voltage:", odrive2.get_bus_voltage())
+        print("ODrive 1 Position:", odrive1.get_joint_position())
+        print("ODrive 2 Position:", odrive2.get_joint_position())
+        print("ODrive 1 Velocity:", odrive1.get_joint_velocity())
+        print("ODrive 2 Velocity:", odrive2.get_joint_velocity())
         print("ODrive 1 Current:", odrive1.get_bus_current())
         print("ODrive 2 Current:", odrive2.get_bus_current())
+        time.sleep(0.1)
 except KeyboardInterrupt:
     print("Exiting...")
 finally:

@@ -1,4 +1,4 @@
-from odrive_uart_class import ODriveUART
+from uart_classes import ODriveUART
 import time
 
 odrive1 = ODriveUART("/dev/ttyUSB0")

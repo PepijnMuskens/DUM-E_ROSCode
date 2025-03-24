@@ -1,8 +1,8 @@
-from odrive_uart_class import ODriveUART
+from uart_classes import ODriveUART
 import time
 
-odrive1 = ODriveUART("/dev/ttyUSB0")
-odrive2 = ODriveUART("/dev/ttyUSB1")
+odrive1 = ODriveUART("/dev/ttyUSB1")
+odrive2 = ODriveUART("/dev/ttyUSB2")
 
 odrive1.clear_errors()
 odrive2.clear_errors()
