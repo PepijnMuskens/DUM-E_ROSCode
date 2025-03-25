@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pepijn/ros2_ws/src/arduino_interfaces
+CMAKE_SOURCE_DIR = /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pepijn/ros2_ws/build/arduino_interfaces
+CMAKE_BINARY_DIR = /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces
 
 # Utility rule file for arduino_interfaces.
 
@@ -66,8 +66,8 @@ include CMakeFiles/arduino_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/arduino_interfaces.dir/progress.make
 
-CMakeFiles/arduino_interfaces: /home/pepijn/ros2_ws/src/arduino_interfaces/msg/Num.msg
-CMakeFiles/arduino_interfaces: /home/pepijn/ros2_ws/src/arduino_interfaces/srv/SetStepperMotorPositions.srv
+CMakeFiles/arduino_interfaces: /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/msg/Num.msg
+CMakeFiles/arduino_interfaces: /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/srv/SetStepperMotorPositions.srv
 CMakeFiles/arduino_interfaces: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 
 arduino_interfaces: CMakeFiles/arduino_interfaces
@@ -83,6 +83,6 @@ CMakeFiles/arduino_interfaces.dir/clean:
 .PHONY : CMakeFiles/arduino_interfaces.dir/clean
 
 CMakeFiles/arduino_interfaces.dir/depend:
-	cd /home/pepijn/ros2_ws/build/arduino_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pepijn/ros2_ws/src/arduino_interfaces /home/pepijn/ros2_ws/src/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces/CMakeFiles/arduino_interfaces.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles/arduino_interfaces.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/arduino_interfaces.dir/depend
 

@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-42b85139700b934d708a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "arduino_interfaces__py",
+					"jsonFile" : "directory-arduino_interfaces__py-d0f0c282e5d1fd464aba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "arduino_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_arduino_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_arduino_interfaces_egg-689078ba442dfa05070a.json",
+					"name" : "ament_cmake_python_build_arduino_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_arduino_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_arduino_interfaces-484f6479d6f455e059cb.json",
+					"name" : "ament_cmake_python_copy_arduino_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces-6381c4dec232c61f6662.json",
+					"name" : "arduino_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__cpp-e6c460d16577ca0cc64a.json",
+					"name" : "arduino_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "arduino_interfaces__py::@fe0e3012c24ba67944a6",
+					"jsonFile" : "target-arduino_interfaces__py-261d45663233aad27b68.json",
+					"name" : "arduino_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_generator_c-22d037d9cc32e7478a87.json",
+					"name" : "arduino_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_generator_py-6a606d8e0eb27b8a3514.json",
+					"name" : "arduino_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_generator_type_description-c353f19d3ae51fc202fa.json",
+					"name" : "arduino_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_typesupport_c-e13dfb0fa592d9a8cf44.json",
+					"name" : "arduino_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_typesupport_cpp-0bdab458c1ef264bbf7f.json",
+					"name" : "arduino_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_typesupport_fastrtps_c-bcd2f0ed0a3edfce98b9.json",
+					"name" : "arduino_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_typesupport_fastrtps_cpp-5dbe2528804ed586a1e1.json",
+					"name" : "arduino_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_typesupport_introspection_c-c2569ed63affec7319cb.json",
+					"name" : "arduino_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces__rosidl_typesupport_introspection_cpp-79660008f133d202c0e2.json",
+					"name" : "arduino_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces_s__rosidl_typesupport_c-9adbce700437e3334a5b.json",
+					"name" : "arduino_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces_s__rosidl_typesupport_fastrtps_c-372d41c3341436b00726.json",
+					"name" : "arduino_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces_s__rosidl_typesupport_introspection_c-6d5fc7981437e0825e82.json",
+					"name" : "arduino_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arduino_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arduino_interfaces_uninstall-1f14333a327893d3d575.json",
+					"name" : "arduino_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7e6baf320ffa16cadfc7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces",
+		"source" : "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

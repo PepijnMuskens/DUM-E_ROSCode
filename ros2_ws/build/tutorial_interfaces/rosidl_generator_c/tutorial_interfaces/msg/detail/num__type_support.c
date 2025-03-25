@@ -4,9 +4,9 @@
 
 #include <string.h>
 
+#include "tutorial_interfaces/msg/detail/num__type_support.h"
 #include "tutorial_interfaces/msg/detail/num__struct.h"
 #include "tutorial_interfaces/msg/detail/num__functions.h"
-#include "tutorial_interfaces/msg/detail/num__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

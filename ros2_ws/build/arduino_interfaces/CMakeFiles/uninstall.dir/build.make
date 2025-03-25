@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pepijn/ros2_ws/src/arduino_interfaces
+CMAKE_SOURCE_DIR = /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pepijn/ros2_ws/build/arduino_interfaces
+CMAKE_BINARY_DIR = /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/pepijn/ros2_ws/build/arduino_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pepijn/ros2_ws/src/arduino_interfaces /home/pepijn/ros2_ws/src/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

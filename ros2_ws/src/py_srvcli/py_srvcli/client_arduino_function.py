@@ -1,5 +1,5 @@
 #from tutorial_interfaces.srv import AddThreeInts                            # CHANGE
-from arduino_interfaces.srv import SetStepperMotorPositions
+from arduino_interfaces.msg import SetJointPositions
 import sys
 import rclpy
 from rclpy.node import Node
@@ -9,18 +9,20 @@ class MinimalClientAsync(Node):
 
     def __init__(self):
         super().__init__('minimal_client_async')
-        self.cli = self.create_client(SetStepperMotorPositions, 'set_steppermotor_positions')       # CHANGE
+        self.cli = self.create_client(SetJointPositions, 'set_steppermotor_positions')       # CHANGE
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
-        self.req = SetStepperMotorPositions.Request()                                   # CHANGE
+        self.req = SetJointPositions.Request()                                   # CHANGE
 
     def send_request(self):
-        self.req.base_rotation = int(sys.argv[1]) 
-        self.req.rotation = int(sys.argv[2]) 
-        self.req.end_rotation = int(sys.argv[3]) 
-        self.req.end_angle   = int(sys.argv[4]) 
+        self.req.Joint_0 = int(sys.argv[1]) 
+        self.req.Joint_1 = int(sys.argv[2]) 
+        self.req.Joint_2 = int(sys.argv[3]) 
+        self.req.Joint_3 = int(sys.argv[4])
+        self.req.Joint_4 = int(sys.argv[5]) 
+        self.req.Joint_5 = int(sys.argv[6]) 
         self.get_logger().info('request send')
-        self.future = self.cli.call_async(self.req)
+        self.cli.call_async(self.req)
 
 
 def main(args=None):
@@ -37,10 +39,6 @@ def main(args=None):
             except Exception as e:
                 minimal_client.get_logger().info(
                     'Service call failed %r' % (e,))
-            else:
-                minimal_client.get_logger().info(
-                    'Result of add_three_ints: for %d + %d + %d = %d' %                                # CHANGE
-                    (minimal_client.req.base_rotation, minimal_client.req.rotation, minimal_client.req.end_rotation, response.time_to_complete_ms))  # CHANGE
             break
 
     minimal_client.destroy_node()

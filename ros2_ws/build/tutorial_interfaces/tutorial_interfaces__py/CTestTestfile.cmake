@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/pepijn/ros2_ws/build/tutorial_interfaces/tutorial_interfaces__py
-# Build directory: /home/pepijn/ros2_ws/build/tutorial_interfaces/tutorial_interfaces__py
+# Source directory: /home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/tutorial_interfaces__py
+# Build directory: /home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/tutorial_interfaces__py
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

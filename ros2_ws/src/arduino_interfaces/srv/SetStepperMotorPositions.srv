@@ -1,6 +1,8 @@
-int64 base_rotation
-int64 rotation
-int64 end_rotation
-int64 end_angle
+int64 Joint_0
+int64 Joint_1
+int64 Joint_2
+int64 Joint_3
+int64 Joint_4
+int64 Joint_5
 ---
 int64 time_to_complete_ms

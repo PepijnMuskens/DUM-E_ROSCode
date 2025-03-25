@@ -11,8 +11,8 @@ class MinimalService(Node):
     def __init__(self):
         super().__init__('minimal_service')
         self.srv = self.create_service(SetStepperMotorPositions, 'set_steppermotor_positions', self.set_steppermotor_positions_callback)
+        self.arduino = AruinoUART("/dev/ttyUSB2")
         #self.arduino = AruinoUART("/dev/ttyUSB0")
-        self.arduino = AruinoUART("/dev/ttyUSB0")
     
     def set_steppermotor_positions_callback(self, request, response):
         self.get_logger().info('Incoming request\nbr: %d r: %d er: %d ea: %d' % (request.base_rotation, request.rotation, request.end_rotation, request.end_angle))  # CHANGE

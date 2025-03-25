@@ -1,8 +1,8 @@
 {
   "package_name": "tutorial_interfaces",
   "non_idl_tuples": [
-    "/home/pepijn/ros2_ws/src/tutorial_interfaces:msg/Num.msg",
-    "/home/pepijn/ros2_ws/src/tutorial_interfaces:msg/Sphere.msg",
-    "/home/pepijn/ros2_ws/src/tutorial_interfaces:srv/AddThreeInts.srv"
+    "/home/ras/DUM-E_ROSCode/ros2_ws/src/tutorial_interfaces:msg/Num.msg",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/src/tutorial_interfaces:msg/Sphere.msg",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/src/tutorial_interfaces:srv/AddThreeInts.srv"
   ]
 }

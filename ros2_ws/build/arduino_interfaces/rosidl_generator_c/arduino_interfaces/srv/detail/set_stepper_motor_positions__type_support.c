@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "arduino_interfaces/srv/detail/set_stepper_motor_positions__struct.h"
-#include "arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.h"
-#include "arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.h"
+#include "arduino_interfaces/srv/detail/set_stepper_motor_positions__struct.h"
+#include "arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

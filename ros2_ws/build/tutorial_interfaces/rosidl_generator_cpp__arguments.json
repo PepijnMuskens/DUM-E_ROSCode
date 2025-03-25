@@ -1,11 +1,11 @@
 {
   "package_name": "tutorial_interfaces",
-  "output_dir": "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces",
+  "output_dir": "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Sphere.idl",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Sphere.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl",
@@ -94,9 +94,9 @@
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__type_support.hpp.em",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Sphere.idl",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Sphere.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/AccelWithCovariance.idl",
@@ -164,8 +164,8 @@
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
   ],
   "type_description_tuples": [
-    "msg/Num.idl:/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces/msg/Num.json",
-    "msg/Sphere.idl:/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces/msg/Sphere.json",
-    "srv/AddThreeInts.idl:/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces/srv/AddThreeInts.json"
+    "msg/Num.idl:/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces/msg/Num.json",
+    "msg/Sphere.idl:/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces/msg/Sphere.json",
+    "srv/AddThreeInts.idl:/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces/srv/AddThreeInts.json"
   ]
 }

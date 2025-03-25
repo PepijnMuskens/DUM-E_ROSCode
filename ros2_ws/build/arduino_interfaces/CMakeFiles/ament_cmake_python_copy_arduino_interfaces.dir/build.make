@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pepijn/ros2_ws/src/arduino_interfaces
+CMAKE_SOURCE_DIR = /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pepijn/ros2_ws/build/arduino_interfaces
+CMAKE_BINARY_DIR = /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces
 
 # Utility rule file for ament_cmake_python_copy_arduino_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/compiler_depen
 include CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_arduino_interfaces:
-	/usr/bin/cmake -E copy_directory /home/pepijn/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces/ament_cmake_python/arduino_interfaces/arduino_interfaces
+	/usr/bin/cmake -E copy_directory /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/ament_cmake_python/arduino_interfaces/arduino_interfaces
 
 ament_cmake_python_copy_arduino_interfaces: CMakeFiles/ament_cmake_python_copy_arduino_interfaces
 ament_cmake_python_copy_arduino_interfaces: CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/depend:
-	cd /home/pepijn/ros2_ws/build/arduino_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pepijn/ros2_ws/src/arduino_interfaces /home/pepijn/ros2_ws/src/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces /home/pepijn/ros2_ws/build/arduino_interfaces/CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_copy_arduino_interfaces.dir/depend
 

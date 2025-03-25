@@ -1,11 +1,11 @@
 {
   "package_name": "tutorial_interfaces",
-  "output_dir": "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces",
+  "output_dir": "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Sphere.idl",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Sphere.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl",
@@ -88,9 +88,9 @@
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Sphere.idl",
-    "/home/pepijn/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Sphere.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/AccelWithCovariance.idl",
