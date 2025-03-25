@@ -1,0 +1,596 @@
+[0.000000] (-) TimerEvent: {}
+[0.000970] (arduino_interfaces) JobQueued: {'identifier': 'arduino_interfaces', 'dependencies': OrderedDict()}
+[0.001882] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.002426] (tutorial_interfaces) JobQueued: {'identifier': 'tutorial_interfaces', 'dependencies': OrderedDict()}
+[0.003016] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict({'arduino_interfaces': '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces', 'tutorial_interfaces': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces'})}
+[0.003207] (arduino_interfaces) JobStarted: {'identifier': 'arduino_interfaces'}
+[0.034452] (tutorial_interfaces) JobStarted: {'identifier': 'tutorial_interfaces'}
+[0.057684] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.093791] (arduino_interfaces) JobProgress: {'identifier': 'arduino_interfaces', 'progress': 'cmake'}
+[0.096909] (arduino_interfaces) JobProgress: {'identifier': 'arduino_interfaces', 'progress': 'build'}
+[0.099702] (arduino_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras', 'SSH_CLIENT': '145.93.117.102 55360 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ras', 'OLDPWD': '/home/ras/DUM-E_ROSCode', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ras', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/opt/ros/jazzy/bin:/home/ras/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '145.93.117.102 55360 145.93.236.46 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy'}), 'shell': False}
+[0.110321] (-) TimerEvent: {}
+[0.113397] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'cmake'}
+[0.116808] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'build'}
+[0.118437] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras', 'SSH_CLIENT': '145.93.117.102 55360 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ras', 'OLDPWD': '/home/ras/DUM-E_ROSCode', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ras', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/opt/ros/jazzy/bin:/home/ras/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '145.93.117.102 55360 145.93.236.46 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy'}), 'shell': False}
+[0.211161] (-) TimerEvent: {}
+[0.313214] (-) TimerEvent: {}
+[0.415101] (-) TimerEvent: {}
+[0.500577] (arduino_interfaces) StdoutLine: {'line': b'[  2%] Built target arduino_interfaces__rosidl_generator_type_description\n'}
+[0.517174] (-) TimerEvent: {}
+[0.536955] (tutorial_interfaces) StdoutLine: {'line': b'[  1%] Built target tutorial_interfaces__rosidl_generator_type_description\n'}
+[0.584094] (arduino_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_arduino_interfaces\n'}
+[0.597436] (tutorial_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_tutorial_interfaces\n'}
+[0.618098] (-) TimerEvent: {}
+[0.721126] (-) TimerEvent: {}
+[0.815472] (arduino_interfaces) StdoutLine: {'line': b'[  4%] Built target arduino_interfaces__cpp\n'}
+[0.822135] (-) TimerEvent: {}
+[0.872152] (tutorial_interfaces) StdoutLine: {'line': b'[ 22%] Built target tutorial_interfaces__rosidl_generator_c\n'}
+[0.886178] (tutorial_interfaces) StdoutLine: {'line': b'[ 24%] Built target tutorial_interfaces__cpp\n'}
+[0.934159] (-) TimerEvent: {}
+[0.954633] (arduino_interfaces) StdoutLine: {'line': b'[ 22%] Built target arduino_interfaces__rosidl_generator_c\n'}
+[1.037095] (-) TimerEvent: {}
+[1.151103] (-) TimerEvent: {}
+[1.255069] (-) TimerEvent: {}
+[1.342117] (arduino_interfaces) StdoutLine: {'line': b'[ 34%] Built target arduino_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.342839] (arduino_interfaces) StdoutLine: {'line': b'[ 40%] Built target arduino_interfaces__rosidl_typesupport_c\n'}
+[1.364769] (-) TimerEvent: {}
+[1.415222] (tutorial_interfaces) StdoutLine: {'line': b'[ 42%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.428129] (tutorial_interfaces) StdoutLine: {'line': b'[ 42%] Built target tutorial_interfaces__rosidl_typesupport_c\n'}
+[1.467689] (tutorial_interfaces) StdoutLine: {'line': b'[ 51%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.472387] (-) TimerEvent: {}
+[1.589107] (-) TimerEvent: {}
+[1.617404] (arduino_interfaces) StdoutLine: {'line': b'[ 50%] Built target arduino_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[1.670339] (arduino_interfaces) StdoutLine: {'line': b'[ 59%] Built target arduino_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.699118] (-) TimerEvent: {}
+[1.782747] (arduino_interfaces) StdoutLine: {'line': b'[ 68%] Built target arduino_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.802172] (-) TimerEvent: {}
+[1.914231] (tutorial_interfaces) StdoutLine: {'line': b'[ 61%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.915383] (-) TimerEvent: {}
+[1.941102] (arduino_interfaces) StdoutLine: {'line': b'[ 77%] Built target arduino_interfaces__rosidl_typesupport_cpp\n'}
+[1.963161] (tutorial_interfaces) StdoutLine: {'line': b'[ 70%] Built target tutorial_interfaces__rosidl_typesupport_cpp\n'}
+[1.971525] (tutorial_interfaces) StdoutLine: {'line': b'[ 79%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.018152] (-) TimerEvent: {}
+[2.124254] (-) TimerEvent: {}
+[2.130262] (arduino_interfaces) StdoutLine: {'line': b'[ 77%] Built target arduino_interfaces\n'}
+[2.184193] (tutorial_interfaces) StdoutLine: {'line': b'[ 79%] Built target tutorial_interfaces\n'}
+[2.228082] (-) TimerEvent: {}
+[2.334082] (-) TimerEvent: {}
+[2.357781] (arduino_interfaces) StdoutLine: {'line': b'[ 79%] Built target arduino_interfaces__py\n'}
+[2.434251] (-) TimerEvent: {}
+[2.520046] (arduino_interfaces) StdoutLine: {'line': b'[ 86%] Built target arduino_interfaces__rosidl_generator_py\n'}
+[2.534419] (-) TimerEvent: {}
+[2.546058] (tutorial_interfaces) StdoutLine: {'line': b'[ 81%] Built target tutorial_interfaces__py\n'}
+[2.637065] (-) TimerEvent: {}
+[2.738198] (-) TimerEvent: {}
+[2.842618] (-) TimerEvent: {}
+[2.848107] (arduino_interfaces) StdoutLine: {'line': b'[ 90%] Built target arduino_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[2.858187] (arduino_interfaces) StdoutLine: {'line': b'[ 95%] Built target arduino_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[2.947073] (-) TimerEvent: {}
+[2.974130] (arduino_interfaces) StdoutLine: {'line': b'[100%] Built target arduino_interfaces_s__rosidl_typesupport_c\n'}
+[2.989282] (tutorial_interfaces) StdoutLine: {'line': b'[ 88%] Built target tutorial_interfaces__rosidl_generator_py\n'}
+[3.047255] (-) TimerEvent: {}
+[3.149811] (-) TimerEvent: {}
+[3.256077] (-) TimerEvent: {}
+[3.326484] (tutorial_interfaces) StdoutLine: {'line': b'[ 92%] Built target tutorial_interfaces_s__rosidl_typesupport_c\n'}
+[3.359128] (-) TimerEvent: {}
+[3.413068] (tutorial_interfaces) StdoutLine: {'line': b'[ 96%] Built target tutorial_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[3.462081] (-) TimerEvent: {}
+[3.482140] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[3.562283] (-) TimerEvent: {}
+[3.665811] (-) TimerEvent: {}
+[3.768725] (-) TimerEvent: {}
+[3.871995] (-) TimerEvent: {}
+[3.975429] (-) TimerEvent: {}
+[4.040207] (tutorial_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.046098] (arduino_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.080091] (-) TimerEvent: {}
+[4.182069] (-) TimerEvent: {}
+[4.241204] (arduino_interfaces) StdoutLine: {'line': b'writing arduino_interfaces.egg-info/PKG-INFO\n'}
+[4.243851] (arduino_interfaces) StdoutLine: {'line': b'writing dependency_links to arduino_interfaces.egg-info/dependency_links.txt\n'}
+[4.244623] (arduino_interfaces) StdoutLine: {'line': b'writing top-level names to arduino_interfaces.egg-info/top_level.txt\n'}
+[4.282253] (-) TimerEvent: {}
+[4.365786] (tutorial_interfaces) StdoutLine: {'line': b'writing tutorial_interfaces.egg-info/PKG-INFO\n'}
+[4.369381] (tutorial_interfaces) StdoutLine: {'line': b'writing dependency_links to tutorial_interfaces.egg-info/dependency_links.txt\n'}
+[4.373237] (tutorial_interfaces) StdoutLine: {'line': b'writing top-level names to tutorial_interfaces.egg-info/top_level.txt\n'}
+[4.384094] (-) TimerEvent: {}
+[4.488074] (-) TimerEvent: {}
+[4.589299] (-) TimerEvent: {}
+[4.691052] (-) TimerEvent: {}
+[4.719979] (arduino_interfaces) StdoutLine: {'line': b"reading manifest file 'arduino_interfaces.egg-info/SOURCES.txt'\n"}
+[4.731203] (arduino_interfaces) StdoutLine: {'line': b"writing manifest file 'arduino_interfaces.egg-info/SOURCES.txt'\n"}
+[4.792317] (-) TimerEvent: {}
+[4.828396] (tutorial_interfaces) StdoutLine: {'line': b"reading manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'\n"}
+[4.835257] (tutorial_interfaces) StdoutLine: {'line': b"writing manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'\n"}
+[4.892591] (-) TimerEvent: {}
+[4.939882] (arduino_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_arduino_interfaces_egg\n'}
+[4.992789] (-) TimerEvent: {}
+[5.025538] (arduino_interfaces) CommandEnded: {'returncode': 0}
+[5.027237] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_tutorial_interfaces_egg\n'}
+[5.027899] (arduino_interfaces) JobProgress: {'identifier': 'arduino_interfaces', 'progress': 'install'}
+[5.088079] (arduino_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces'], 'cwd': '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras', 'SSH_CLIENT': '145.93.117.102 55360 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ras', 'OLDPWD': '/home/ras/DUM-E_ROSCode', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ras', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/opt/ros/jazzy/bin:/home/ras/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '145.93.117.102 55360 145.93.236.46 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy'}), 'shell': False}
+[5.097224] (-) TimerEvent: {}
+[5.105709] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[5.113297] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'install'}
+[5.113902] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces'], 'cwd': '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras', 'SSH_CLIENT': '145.93.117.102 55360 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ras', 'OLDPWD': '/home/ras/DUM-E_ROSCode', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ras', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/opt/ros/jazzy/bin:/home/ras/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '145.93.117.102 55360 145.93.236.46 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy'}), 'shell': False}
+[5.144716] (arduino_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.146909] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/ament_index/resource_index/rosidl_interfaces/arduino_interfaces\n'}
+[5.149588] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/msg/Num.json\n'}
+[5.153089] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/srv/SetJointPositions.json\n'}
+[5.156407] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces\n'}
+[5.159221] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv\n'}
+[5.163206] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/set_joint_positions.h\n'}
+[5.166250] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail\n'}
+[5.166899] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__description.c\n'}
+[5.172798] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.h\n'}
+[5.178240] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__functions.h\n'}
+[5.185875] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__functions.c\n'}
+[5.193824] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__struct.h\n'}
+[5.198811] (-) TimerEvent: {}
+[5.205089] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.c\n'}
+[5.211358] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg\n'}
+[5.218041] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.226173] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail\n'}
+[5.234075] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__struct.h\n'}
+[5.238750] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__functions.h\n'}
+[5.239793] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.h\n'}
+[5.249778] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__functions.c\n'}
+[5.258132] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__description.c\n'}
+[5.258811] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.c\n'}
+[5.259615] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/num.h\n'}
+[5.260247] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/library_path.sh\n'}
+[5.260691] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/library_path.dsv\n'}
+[5.276405] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_generator_c.so\n'}
+[5.277055] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces\n'}
+[5.277676] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv\n'}
+[5.278312] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail\n'}
+[5.278884] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_fastrtps_c.h\n'}
+[5.293030] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg\n'}
+[5.293787] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.294574] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail\n'}
+[5.304743] (-) TimerEvent: {}
+[5.310241] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[5.314120] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.314905] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces\n'}
+[5.321405] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv\n'}
+[5.325031] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail\n'}
+[5.325800] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_introspection_c.h\n'}
+[5.326416] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.c\n'}
+[5.335010] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg\n'}
+[5.335852] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail\n'}
+[5.336568] (tutorial_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.337442] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces\n'}
+[5.345466] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[5.346174] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.c\n'}
+[5.346679] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.json\n'}
+[5.347265] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Sphere.json\n'}
+[5.347743] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.json\n'}
+[5.353523] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[5.354143] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[5.354669] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.h\n'}
+[5.355266] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.360060] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.360809] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_c.so\n'}
+[5.361856] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces\n'}
+[5.362541] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv\n'}
+[5.366507] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[5.367124] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__description.c\n'}
+[5.367641] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.c\n'}
+[5.368143] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.h\n'}
+[5.368670] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.h\n'}
+[5.372676] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.h\n'}
+[5.376652] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.c\n'}
+[5.377631] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/set_joint_positions.hpp\n'}
+[5.378449] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail\n'}
+[5.378994] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__struct.hpp\n'}
+[5.380013] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[5.380813] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.387700] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[5.388683] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.hpp\n'}
+[5.389517] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__builder.hpp\n'}
+[5.391840] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__traits.hpp\n'}
+[5.392577] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg\n'}
+[5.393448] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail\n'}
+[5.394470] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.h\n'}
+[5.395383] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.h\n'}
+[5.396519] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.c\n'}
+[5.397496] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__struct.hpp\n'}
+[5.398262] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__builder.hpp\n'}
+[5.398957] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.hpp\n'}
+[5.399543] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__traits.hpp\n'}
+[5.400051] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/num.hpp\n'}
+[5.400729] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.h\n'}
+[5.401462] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.c\n'}
+[5.402180] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__description.c\n'}
+[5.403034] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.h\n'}
+[5.403772] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__struct.h\n'}
+[5.404539] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.405253] (-) TimerEvent: {}
+[5.406599] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces\n'}
+[5.407389] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv\n'}
+[5.407900] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__functions.c\n'}
+[5.408571] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__functions.h\n'}
+[5.409182] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.c\n'}
+[5.409748] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail\n'}
+[5.410402] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/dds_fastrtps\n'}
+[5.410959] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.416289] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg\n'}
+[5.417733] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail\n'}
+[5.418798] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.419513] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/dds_fastrtps\n'}
+[5.420152] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__description.c\n'}
+[5.420989] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.h\n'}
+[5.421985] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/sphere.h\n'}
+[5.423013] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.423804] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.424479] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh\n'}
+[5.425117] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.dsv\n'}
+[5.425755] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so\n'}
+[5.426612] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[5.430530] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[5.431470] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[5.432483] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[5.439686] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[5.441235] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces\n'}
+[5.447231] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.448100] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[5.448723] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_c.h\n'}
+[5.449315] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[5.449838] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.454829] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[5.455453] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv\n'}
+[5.456406] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail\n'}
+[5.463373] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp\n'}
+[5.464290] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.465319] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg\n'}
+[5.472445] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail\n'}
+[5.473279] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.474045] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.cpp\n'}
+[5.474713] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.481581] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.482474] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[5.483388] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[5.493696] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__builder.hpp\n'}
+[5.495416] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/pythonpath.sh\n'}
+[5.502716] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.hpp\n'}
+[5.504130] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.hpp\n'}
+[5.512248] (-) TimerEvent: {}
+[5.516565] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/pythonpath.dsv\n'}
+[5.517524] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info\n'}
+[5.526070] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__traits.hpp\n'}
+[5.527484] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.hpp\n'}
+[5.531588] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[5.532525] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/sphere.hpp\n'}
+[5.537189] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[5.538141] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__traits.hpp\n'}
+[5.538842] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__builder.hpp\n'}
+[5.539483] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.543213] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[5.543822] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.544691] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__struct.hpp\n'}
+[5.545176] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.hpp\n'}
+[5.545582] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__builder.hpp\n'}
+[5.549122] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.hpp\n'}
+[5.549800] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.hpp\n'}
+[5.550436] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__traits.hpp\n'}
+[5.550876] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.hpp\n'}
+[5.553702] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.554247] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[5.556768] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[5.559814] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[5.562480] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.566446] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/dds_fastrtps\n'}
+[5.567150] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[5.568200] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[5.568738] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.570530] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.572751] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/dds_fastrtps\n'}
+[5.575585] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.577835] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces\n'}
+[5.578891] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.581587] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.584377] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.586380] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_c.so\n'}
+[5.588750] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv\n'}
+[5.589813] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv/_set_joint_positions_s.c\n'}
+[5.590514] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.594313] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.595209] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[5.595700] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[5.596398] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[5.597453] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[5.598219] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.c\n'}
+[5.598834] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv/_set_joint_positions.py\n'}
+[5.615286] (-) TimerEvent: {}
+[5.616004] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv/__init__.py\n'}
+[5.616636] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[5.617131] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.617731] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/__init__.py\n'}
+[5.622478] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg\n'}
+[5.622995] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg/_num_s.c\n'}
+[5.623491] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg/__init__.py\n'}
+[5.623883] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg/_num.py\n'}
+[5.624361] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[5.624789] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[5.632519] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_c.h\n'}
+[5.633019] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[5.633494] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.c\n'}
+[5.633977] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.c\n'}
+[5.634455] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.634848] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.641804] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so\n'}
+[5.642335] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[5.642826] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[5.643306] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[5.643705] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.cpp\n'}
+[5.651145] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.651630] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[5.652091] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[5.652525] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.652908] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.cpp\n'}
+[5.658571] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.659175] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.cpp\n'}
+[5.659619] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.660065] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.660500] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh\n'}
+[5.660865] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.dsv\n'}
+[5.668376] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info\n'}
+[5.668816] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.669304] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[5.669712] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.674701] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.677461] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces\n'}
+[5.678107] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.678608] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.679063] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[5.679492] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv\n'}
+[5.679882] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv/_add_three_ints.py\n'}
+[5.684592] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv/_add_three_ints_s.c\n'}
+[5.685164] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv/__init__.py\n'}
+[5.685875] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.so\n'}
+[5.686415] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.686805] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/__init__.py\n'}
+[5.690425] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg\n'}
+[5.690874] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_sphere_s.c\n'}
+[5.691406] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_num_s.c\n'}
+[5.691818] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_sphere.py\n'}
+[5.692279] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/__init__.py\n'}
+[5.692670] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_num.py\n'}
+[5.695680] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.696542] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces'...\n"}
+[5.697456] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg'...\n"}
+[5.701652] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv'...\n"}
+[5.702319] (arduino_interfaces) StdoutLine: {'line': b"Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces'...\n"}
+[5.703162] (arduino_interfaces) StdoutLine: {'line': b"Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg'...\n"}
+[5.706868] (arduino_interfaces) StdoutLine: {'line': b"Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv'...\n"}
+[5.707385] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.707822] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[5.708289] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.so\n'}
+[5.708695] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_py.so\n'}
+[5.712959] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.idl\n'}
+[5.713501] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Sphere.idl\n'}
+[5.713903] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.idl\n'}
+[5.714443] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.msg\n'}
+[5.714830] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Sphere.msg\n'}
+[5.718511] (-) TimerEvent: {}
+[5.719091] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.srv\n'}
+[5.719769] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces\n'}
+[5.722694] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces\n'}
+[5.723376] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh\n'}
+[5.724001] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.724568] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh\n'}
+[5.729011] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv\n'}
+[5.730663] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash\n'}
+[5.731240] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh\n'}
+[5.731751] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh\n'}
+[5.732328] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv\n'}
+[5.735336] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv\n'}
+[5.735864] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces\n'}
+[5.736368] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.736760] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.737259] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.737681] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.738324] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.738734] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.739237] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.739673] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.743540] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.744102] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.744700] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.745567] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.748485] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.753525] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.754224] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.754665] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.755178] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.755627] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.756233] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.757138] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.760665] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.761510] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.762308] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.763451] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.764221] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake\n'}
+[5.764691] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake\n'}
+[5.765200] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml\n'}
+[5.765670] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[5.767084] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.768501] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[5.769690] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_c.so\n'}
+[5.770305] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_generator_py.so\n'}
+[5.770812] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/msg/Num.idl\n'}
+[5.773142] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/srv/SetJointPositions.idl\n'}
+[5.774039] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/msg/Num.msg\n'}
+[5.774720] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/srv/SetJointPositions.srv\n'}
+[5.775325] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/ament_index/resource_index/package_run_dependencies/arduino_interfaces\n'}
+[5.775869] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/ament_index/resource_index/parent_prefix_path/arduino_interfaces\n'}
+[5.776585] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/ament_prefix_path.sh\n'}
+[5.777421] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.778602] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/path.sh\n'}
+[5.779258] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/path.dsv\n'}
+[5.779841] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/local_setup.bash\n'}
+[5.781141] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/local_setup.sh\n'}
+[5.782367] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/local_setup.zsh\n'}
+[5.783000] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/local_setup.dsv\n'}
+[5.783882] (arduino_interfaces) StdoutLine: {'line': b'-- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.dsv\n'}
+[5.784454] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/ament_index/resource_index/packages/arduino_interfaces\n'}
+[5.784826] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.788619] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.789374] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.789950] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.790536] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.794209] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.794755] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.795276] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.795659] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.796163] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.796676] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.800731] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.801614] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.802429] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.806186] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.806795] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.807414] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.808137] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.808686] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.813134] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.813901] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.814665] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.815379] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.818707] (-) TimerEvent: {}
+[5.819287] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.819887] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfacesConfig.cmake\n'}
+[5.820519] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfacesConfig-version.cmake\n'}
+[5.821459] (arduino_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.xml\n'}
+[5.873144] (tutorial_interfaces) JobEnded: {'identifier': 'tutorial_interfaces', 'rc': 0}
+[5.884882] (arduino_interfaces) CommandEnded: {'returncode': 0}
+[5.919845] (-) TimerEvent: {}
+[6.023749] (-) TimerEvent: {}
+[6.027410] (arduino_interfaces) JobEnded: {'identifier': 'arduino_interfaces', 'rc': 0}
+[6.031717] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[6.123957] (-) TimerEvent: {}
+[6.225023] (-) TimerEvent: {}
+[6.326303] (-) TimerEvent: {}
+[6.427818] (-) TimerEvent: {}
+[6.529521] (-) TimerEvent: {}
+[6.630551] (-) TimerEvent: {}
+[6.731672] (-) TimerEvent: {}
+[6.833496] (-) TimerEvent: {}
+[6.934580] (-) TimerEvent: {}
+[7.035686] (-) TimerEvent: {}
+[7.136973] (-) TimerEvent: {}
+[7.238986] (-) TimerEvent: {}
+[7.340390] (-) TimerEvent: {}
+[7.441471] (-) TimerEvent: {}
+[7.542593] (-) TimerEvent: {}
+[7.643364] (-) TimerEvent: {}
+[7.744042] (-) TimerEvent: {}
+[7.845135] (-) TimerEvent: {}
+[7.946121] (-) TimerEvent: {}
+[8.045767] (my_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_package', 'build', '--build-base', '/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/build', 'install', '--record', '/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras/DUM-E_ROSCode/ros2_ws/src/my_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras', 'SSH_CLIENT': '145.93.117.102 55360 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ras', 'OLDPWD': '/home/ras/DUM-E_ROSCode', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ras', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/opt/ros/jazzy/bin:/home/ras/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '145.93.117.102 55360 145.93.236.46 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[8.054303] (-) TimerEvent: {}
+[8.155415] (-) TimerEvent: {}
+[8.256623] (-) TimerEvent: {}
+[8.357832] (-) TimerEvent: {}
+[8.458730] (-) TimerEvent: {}
+[8.559492] (-) TimerEvent: {}
+[8.660800] (-) TimerEvent: {}
+[8.762141] (-) TimerEvent: {}
+[8.863404] (-) TimerEvent: {}
+[8.964643] (-) TimerEvent: {}
+[9.066261] (-) TimerEvent: {}
+[9.166976] (-) TimerEvent: {}
+[9.268029] (-) TimerEvent: {}
+[9.369106] (-) TimerEvent: {}
+[9.470218] (-) TimerEvent: {}
+[9.499523] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[9.570398] (-) TimerEvent: {}
+[9.607582] (my_package) StdoutLine: {'line': b'writing ../../build/my_package/my_package.egg-info/PKG-INFO\n'}
+[9.609602] (my_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[9.611353] (my_package) StdoutLine: {'line': b'writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt\n'}
+[9.613795] (my_package) StdoutLine: {'line': b'writing requirements to ../../build/my_package/my_package.egg-info/requires.txt\n'}
+[9.616096] (my_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt\n'}
+[9.670562] (-) TimerEvent: {}
+[9.771768] (-) TimerEvent: {}
+[9.838486] (my_package) StdoutLine: {'line': b"reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[9.840361] (my_package) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[9.857246] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[9.859130] (my_package) StdoutLine: {'line': b'running build\n'}
+[9.860301] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[9.862580] (my_package) StdoutLine: {'line': b'running install\n'}
+[9.871941] (-) TimerEvent: {}
+[9.888396] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[9.972089] (-) TimerEvent: {}
+[9.999896] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[10.002599] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.072257] (-) TimerEvent: {}
+[10.117306] (my_package) StdoutLine: {'line': b"removing '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[10.119879] (my_package) StdoutLine: {'line': b'Copying ../../build/my_package/my_package.egg-info to /home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info\n'}
+[10.126139] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[10.172442] (-) TimerEvent: {}
+[10.273124] (-) TimerEvent: {}
+[10.374811] (-) TimerEvent: {}
+[10.476757] (-) TimerEvent: {}
+[10.557010] (py_srvcli) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/build', 'install', '--record', '/home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ras/DUM-E_ROSCode/ros2_ws/src/py_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras', 'SSH_CLIENT': '145.93.117.102 55360 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ras', 'OLDPWD': '/home/ras/DUM-E_ROSCode', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ras', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/opt/ros/jazzy/bin:/home/ras/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '145.93.117.102 55360 145.93.236.46 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[10.576956] (-) TimerEvent: {}
+[10.678174] (-) TimerEvent: {}
+[10.779653] (-) TimerEvent: {}
+[10.880997] (-) TimerEvent: {}
+[10.982548] (-) TimerEvent: {}
+[11.069717] (my_package) StdoutLine: {'line': b'Installing my_node script to /home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/my_package\n'}
+[11.072553] (my_package) StdoutLine: {'line': b"writing list of installed files to '/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/install.log'\n"}
+[11.082809] (-) TimerEvent: {}
+[11.185078] (-) TimerEvent: {}
+[11.229674] (my_package) CommandEnded: {'returncode': 0}
+[11.262518] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[11.285221] (-) TimerEvent: {}
+[11.385810] (-) TimerEvent: {}
+[11.486482] (-) TimerEvent: {}
+[11.587140] (-) TimerEvent: {}
+[11.687761] (-) TimerEvent: {}
+[11.788421] (-) TimerEvent: {}
+[11.889031] (-) TimerEvent: {}
+[11.954068] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[11.989178] (-) TimerEvent: {}
+[12.048816] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[12.050175] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[12.051490] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[12.053034] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[12.053991] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[12.089326] (-) TimerEvent: {}
+[12.189991] (-) TimerEvent: {}
+[12.244680] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[12.247187] (py_srvcli) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[12.249289] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[12.250137] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[12.252600] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[12.253477] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/client_arduino_function.py -> /home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[12.254186] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/service_arduino_function.py -> /home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[12.255573] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[12.279564] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[12.290153] (-) TimerEvent: {}
+[12.374274] (py_srvcli) StdoutLine: {'line': b'copying /home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/build/lib/py_srvcli/client_arduino_function.py -> /home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli\n'}
+[12.375632] (py_srvcli) StdoutLine: {'line': b'copying /home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/build/lib/py_srvcli/service_arduino_function.py -> /home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli\n'}
+[12.379158] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli/client_arduino_function.py to client_arduino_function.cpython-312.pyc\n'}
+[12.382958] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli/service_arduino_function.py to service_arduino_function.cpython-312.pyc\n'}
+[12.386268] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[12.387137] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.390287] (-) TimerEvent: {}
+[12.485133] (py_srvcli) StdoutLine: {'line': b"removing '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[12.487044] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli-0.0.0-py3.12.egg-info\n'}
+[12.490423] (-) TimerEvent: {}
+[12.492889] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[12.590604] (-) TimerEvent: {}
+[12.691353] (-) TimerEvent: {}
+[12.792314] (-) TimerEvent: {}
+[12.892948] (-) TimerEvent: {}
+[12.993634] (-) TimerEvent: {}
+[13.094633] (-) TimerEvent: {}
+[13.173987] (py_srvcli) StdoutLine: {'line': b'Installing client script to /home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/py_srvcli\n'}
+[13.175113] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/py_srvcli\n'}
+[13.177189] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/install.log'\n"}
+[13.194910] (-) TimerEvent: {}
+[13.296119] (-) TimerEvent: {}
+[13.319224] (py_srvcli) CommandEnded: {'returncode': 0}
+[13.353462] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[13.356496] (-) EventReactorShutdown: {}

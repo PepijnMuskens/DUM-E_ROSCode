@@ -490,77 +490,77 @@ rosidl_generator_c/arduino_interfaces/msg/detail/num__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/msg/detail/num__type_support.c.s
 .PHONY : rosidl_generator_c/arduino_interfaces/msg/detail/num__type_support.c.s
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.o: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.o
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.o
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.o: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.o
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.o
 
 # target to build an object file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.o
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.o
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.o
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.o
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.i: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.i
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.i
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.i: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.i
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.i
 
 # target to preprocess a source file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.i
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.i
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.i
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.i
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.s: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.s
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.s
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.s: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.s
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.s
 
 # target to generate assembly for a file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.s
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.c.s
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.s
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.c.s
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.o: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.o
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.o
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.o: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.o
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.o
 
 # target to build an object file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.o
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.o
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.o
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.o
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.i: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.i
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.i
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.i: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.i
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.i
 
 # target to preprocess a source file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.i
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.i
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.i
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.i
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.s: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.s
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.s
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.s: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.s
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.s
 
 # target to generate assembly for a file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.s
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.c.s
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.s
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.c.s
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.o
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.o: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.o
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.o
 
 # target to build an object file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.o
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.o
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.o
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.o
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.i
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.i: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.i
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.i
 
 # target to preprocess a source file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.i
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.i
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.i
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.i
 
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s: rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.s
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.s: rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.s
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.s
 
 # target to generate assembly for a file
-rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.s
-.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.s
+rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.s
+.PHONY : rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.s
 
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.o: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.c.o
 .PHONY : rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.o
@@ -658,29 +658,29 @@ rosidl_generator_py/arduino_interfaces/msg/_num_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/msg/_num_s.c.s
 .PHONY : rosidl_generator_py/arduino_interfaces/msg/_num_s.c.s
 
-rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.o: rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o
-.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.o
+rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.o: rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o
+.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.o
 
 # target to build an object file
-rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o
-.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o
+rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o
+.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o
 
-rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.i: rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.i
-.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.i
+rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.i: rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.i
+.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.i
 
 # target to preprocess a source file
-rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.i
-.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.i
+rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.i
+.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.i
 
-rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.s: rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.s
-.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.s
+rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.s: rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.s
+.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.s
 
 # target to generate assembly for a file
-rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.s
-.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.s
+rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.s
+.PHONY : rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.s
 
 rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.o: rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.o
@@ -706,29 +706,29 @@ rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.cpp.s
 
-rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.o: rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.o
+rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.o: rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.o
 
 # target to build an object file
-rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.o
-.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.o
+rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.o
 
-rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.i: rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.i
+rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.i: rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.i
-.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.i
+rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.i
 
-rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.s: rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.s
+rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.s: rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.s
-.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.s
+rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.cpp.s
 
 rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.o: rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.o
@@ -754,29 +754,29 @@ rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.cpp.s
 
-rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.o: rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.o
+rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.o: rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.o
 
 # target to build an object file
-rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.o
-.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.o
+rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.o
 
-rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.i: rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.i
+rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.i: rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.i
-.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.i
+rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.i
 
-rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.s: rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.s
+rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.s: rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.s
-.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.cpp.s
+rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.o: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.o
@@ -802,29 +802,29 @@ rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.s
 
-rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.o: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.o
+rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.o: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o
+rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o
 
-rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.i: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.i
+rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.i: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.i
+rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.i
 
-rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.s: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.s
+rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.s: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.s
+rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.o: rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.o
@@ -850,29 +850,29 @@ rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.s
 
-rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.o: rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.o
+rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.o: rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.o
 
 # target to build an object file
-rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.o
-.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.o
+rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.o
 
-rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.i: rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.i
+rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.i: rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.i
-.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.i
+rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.i
 
-rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.s: rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.s
+rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.s: rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.s
-.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.s
+rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.s
 
 rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_support.o: rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_support.o
@@ -898,29 +898,29 @@ rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_suppo
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_support.c.s
 
-rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o: rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o
+rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.o: rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.o
-.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.o
+rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.o
 
-rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i: rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i
+rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.i: rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.i
-.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.i
+rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.i
 
-rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s: rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s
+rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.s: rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.s
-.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.c.s
+rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.c.s
 
 rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_support.o: rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_support.o
@@ -946,29 +946,29 @@ rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_sup
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_support.cpp.s
 
-rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o: rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o
+rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.o: rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.o
 
 # target to build an object file
-rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.o
-.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.o
+rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.o
 
-rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i: rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i
+rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.i: rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.i
 
 # target to preprocess a source file
-rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.i
-.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.i
+rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.i
 
-rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s: rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s
+rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.s: rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.s
 
 # target to generate assembly for a file
-rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.s
-.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.cpp.s
+rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/arduino_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp.s
 
 # Help Target
 help:
@@ -1011,15 +1011,15 @@ help:
 	@echo "... rosidl_generator_c/arduino_interfaces/msg/detail/num__type_support.o"
 	@echo "... rosidl_generator_c/arduino_interfaces/msg/detail/num__type_support.i"
 	@echo "... rosidl_generator_c/arduino_interfaces/msg/detail/num__type_support.s"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.o"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.i"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__description.s"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.o"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.i"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.s"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i"
-	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.o"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.i"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__description.s"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.o"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.i"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.s"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.o"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.i"
+	@echo "... rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.s"
 	@echo "... rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.o"
 	@echo "... rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.i"
 	@echo "... rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.s"
@@ -1032,45 +1032,45 @@ help:
 	@echo "... rosidl_generator_py/arduino_interfaces/msg/_num_s.o"
 	@echo "... rosidl_generator_py/arduino_interfaces/msg/_num_s.i"
 	@echo "... rosidl_generator_py/arduino_interfaces/msg/_num_s.s"
-	@echo "... rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.o"
-	@echo "... rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.i"
-	@echo "... rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.s"
+	@echo "... rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.o"
+	@echo "... rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.i"
+	@echo "... rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.s"
 	@echo "... rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.o"
 	@echo "... rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.i"
 	@echo "... rosidl_typesupport_c/arduino_interfaces/msg/num__type_support.s"
-	@echo "... rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.o"
-	@echo "... rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.i"
-	@echo "... rosidl_typesupport_c/arduino_interfaces/srv/set_stepper_motor_positions__type_support.s"
+	@echo "... rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.o"
+	@echo "... rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.i"
+	@echo "... rosidl_typesupport_c/arduino_interfaces/srv/set_joint_positions__type_support.s"
 	@echo "... rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.o"
 	@echo "... rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.i"
 	@echo "... rosidl_typesupport_cpp/arduino_interfaces/msg/num__type_support.s"
-	@echo "... rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.o"
-	@echo "... rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.i"
-	@echo "... rosidl_typesupport_cpp/arduino_interfaces/srv/set_stepper_motor_positions__type_support.s"
+	@echo "... rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.o"
+	@echo "... rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.i"
+	@echo "... rosidl_typesupport_cpp/arduino_interfaces/srv/set_joint_positions__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.s"
-	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.o"
-	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.i"
-	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.s"
-	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.o"
-	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.i"
-	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/msg/detail/num__type_support.s"
-	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o"
-	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i"
-	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/msg/detail/num__type_support.s"
-	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.o"
-	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.i"
-	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.s"
 .PHONY : help
 
 

@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from arduino_interfaces/srv/SetJointPositions.srv
+// generated code does not contain a copyright notice
+
+
+module arduino_interfaces {
+  module srv {
+    struct SetJointPositions_Request {
+      int32 joint0;
+
+      int32 joint1;
+
+      int32 joint2;
+
+      int32 joint3;
+
+      int32 joint4;
+
+      int32 joint5;
+    };
+    struct SetJointPositions_Response {
+      int32 time_to_complete_ms;
+    };
+  };
+};

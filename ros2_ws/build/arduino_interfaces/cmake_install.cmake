@@ -51,7 +51,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_interfaces/srv" TYPE FILE FILES "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_type_description/arduino_interfaces/srv/SetStepperMotorPositions.json")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_interfaces/srv" TYPE FILE FILES "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_type_description/arduino_interfaces/srv/SetJointPositions.json")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -371,7 +371,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_interfaces/srv" TYPE FILE FILES "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces/srv/SetStepperMotorPositions.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_interfaces/srv" TYPE FILE FILES "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces/srv/SetJointPositions.idl")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -379,7 +379,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_interfaces/srv" TYPE FILE FILES "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/srv/SetStepperMotorPositions.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_interfaces/srv" TYPE FILE FILES "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/srv/SetJointPositions.srv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

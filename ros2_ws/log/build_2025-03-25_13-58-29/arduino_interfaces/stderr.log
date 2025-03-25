@@ -1,0 +1,9 @@
+[31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+  rosidl_generate_interfaces() the passed file
+  'srv/SetStepperMotorPositions.srv' doesn't exist relative to the
+  CMAKE_CURRENT_SOURCE_DIR
+  '/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces'
+Call Stack (most recent call first):
+  CMakeLists.txt:16 (rosidl_generate_interfaces)
+
+[0m

@@ -1,0 +1,186 @@
+[0.106s] Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces -- -j4 -l4
+[0.498s] [  2%] Built target arduino_interfaces__rosidl_generator_type_description
+[0.587s] [  2%] Built target ament_cmake_python_copy_arduino_interfaces
+[0.816s] [  4%] Built target arduino_interfaces__cpp
+[0.952s] [ 22%] Built target arduino_interfaces__rosidl_generator_c
+[1.339s] [ 34%] Built target arduino_interfaces__rosidl_typesupport_introspection_c
+[1.340s] [ 40%] Built target arduino_interfaces__rosidl_typesupport_c
+[1.615s] [ 50%] Built target arduino_interfaces__rosidl_typesupport_fastrtps_c
+[1.668s] [ 59%] Built target arduino_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.780s] [ 68%] Built target arduino_interfaces__rosidl_typesupport_introspection_cpp
+[1.939s] [ 77%] Built target arduino_interfaces__rosidl_typesupport_cpp
+[2.128s] [ 77%] Built target arduino_interfaces
+[2.355s] [ 79%] Built target arduino_interfaces__py
+[2.517s] [ 86%] Built target arduino_interfaces__rosidl_generator_py
+[2.847s] [ 90%] Built target arduino_interfaces_s__rosidl_typesupport_fastrtps_c
+[2.856s] [ 95%] Built target arduino_interfaces_s__rosidl_typesupport_introspection_c
+[2.972s] [100%] Built target arduino_interfaces_s__rosidl_typesupport_c
+[4.043s] running egg_info
+[4.240s] writing arduino_interfaces.egg-info/PKG-INFO
+[4.241s] writing dependency_links to arduino_interfaces.egg-info/dependency_links.txt
+[4.249s] writing top-level names to arduino_interfaces.egg-info/top_level.txt
+[4.726s] reading manifest file 'arduino_interfaces.egg-info/SOURCES.txt'
+[4.732s] writing manifest file 'arduino_interfaces.egg-info/SOURCES.txt'
+[4.938s] [100%] Built target ament_cmake_python_build_arduino_interfaces_egg
+[5.023s] Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces -- -j4 -l4
+[5.086s] Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces
+[5.142s] -- Install configuration: ""
+[5.145s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/ament_index/resource_index/rosidl_interfaces/arduino_interfaces
+[5.149s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/msg/Num.json
+[5.153s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/srv/SetJointPositions.json
+[5.154s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces
+[5.159s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv
+[5.162s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/set_joint_positions.h
+[5.163s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail
+[5.169s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__description.c
+[5.173s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.h
+[5.181s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__functions.h
+[5.189s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__functions.c
+[5.195s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__struct.h
+[5.206s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.c
+[5.213s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg
+[5.222s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.230s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail
+[5.235s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__struct.h
+[5.236s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__functions.h
+[5.246s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.h
+[5.247s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__functions.c
+[5.255s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__description.c
+[5.256s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.c
+[5.257s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/num.h
+[5.257s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/library_path.sh
+[5.273s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/library_path.dsv
+[5.274s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_generator_c.so
+[5.274s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces
+[5.275s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv
+[5.275s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail
+[5.290s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_fastrtps_c.h
+[5.290s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg
+[5.291s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.301s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail
+[5.308s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[5.311s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.318s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces
+[5.319s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv
+[5.322s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail
+[5.323s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_introspection_c.h
+[5.324s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.c
+[5.332s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg
+[5.333s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail
+[5.343s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h
+[5.343s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.c
+[5.353s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.357s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_introspection_c.so
+[5.358s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_c.so
+[5.359s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces
+[5.363s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv
+[5.375s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/set_joint_positions.hpp
+[5.376s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail
+[5.376s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__struct.hpp
+[5.386s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.hpp
+[5.388s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__builder.hpp
+[5.389s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__traits.hpp
+[5.390s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg
+[5.391s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail
+[5.395s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__struct.hpp
+[5.395s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__builder.hpp
+[5.396s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.hpp
+[5.397s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__traits.hpp
+[5.397s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/num.hpp
+[5.402s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.404s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces
+[5.405s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv
+[5.407s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail
+[5.408s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/dds_fastrtps
+[5.413s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_fastrtps_cpp.hpp
+[5.414s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg
+[5.415s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail
+[5.416s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[5.417s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/dds_fastrtps
+[5.420s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.421s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.439s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces
+[5.453s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv
+[5.460s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail
+[5.461s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__type_support.cpp
+[5.462s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_introspection_cpp.hpp
+[5.469s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg
+[5.470s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail
+[5.471s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[5.471s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/include/arduino_interfaces/arduino_interfaces/msg/detail/num__type_support.cpp
+[5.478s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.479s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_typesupport_cpp.so
+[5.499s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/pythonpath.sh
+[5.514s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/pythonpath.dsv
+[5.522s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info
+[5.537s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.540s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[5.541s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[5.569s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.575s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces
+[5.578s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.580s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[5.582s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.c
+[5.585s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_c.so
+[5.586s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv
+[5.587s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv/_set_joint_positions_s.c
+[5.612s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv/_set_joint_positions.py
+[5.613s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv/__init__.py
+[5.614s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_introspection_c.so
+[5.614s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.619s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/__init__.py
+[5.620s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg
+[5.620s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg/_num_s.c
+[5.621s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg/__init__.py
+[5.621s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg/_num.py
+[5.700s] Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces'...
+[5.703s] Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/msg'...
+[5.704s] Listing '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/srv'...
+[5.765s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[5.766s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_introspection_c.so
+[5.767s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages/arduino_interfaces/arduino_interfaces_s__rosidl_typesupport_c.so
+[5.767s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/libarduino_interfaces__rosidl_generator_py.so
+[5.768s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/msg/Num.idl
+[5.771s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/srv/SetJointPositions.idl
+[5.771s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/msg/Num.msg
+[5.772s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/srv/SetJointPositions.srv
+[5.772s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/ament_index/resource_index/package_run_dependencies/arduino_interfaces
+[5.773s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/ament_index/resource_index/parent_prefix_path/arduino_interfaces
+[5.774s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/ament_prefix_path.sh
+[5.775s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/ament_prefix_path.dsv
+[5.776s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/path.sh
+[5.776s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/environment/path.dsv
+[5.778s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/local_setup.bash
+[5.779s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/local_setup.sh
+[5.780s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/local_setup.zsh
+[5.780s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/local_setup.dsv
+[5.781s] -- Installing: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.dsv
+[5.781s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/ament_index/resource_index/packages/arduino_interfaces
+[5.785s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_cExport.cmake
+[5.786s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.787s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.787s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.788s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.791s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.792s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_cExport.cmake
+[5.792s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.793s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_cppExport.cmake
+[5.793s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.797s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.798s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.799s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.800s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_cppExport.cmake
+[5.803s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.804s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_pyExport.cmake
+[5.805s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/export_arduino_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.805s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.810s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.810s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.811s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.812s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.813s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.816s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.817s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfacesConfig.cmake
+[5.818s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/cmake/arduino_interfacesConfig-version.cmake
+[5.821s] -- Up-to-date: /home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.xml
+[5.883s] Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces

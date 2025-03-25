@@ -1,0 +1,343 @@
+[0.472s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.472s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff9f60c950>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9fdacc50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9fdacc50>>, mixin_verb=('build',))
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.643s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.644s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ras/DUM-E_ROSCode/ros2_ws'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extension 'ignore'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extension 'ignore_ament_install'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extensions ['colcon_pkg']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extension 'colcon_pkg'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extensions ['colcon_meta']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extension 'colcon_meta'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extensions ['ros']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduino_interfaces) by extension 'ros'
+[0.775s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arduino_interfaces' with type 'ros.ament_cmake' and name 'arduino_interfaces'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ignore', 'ignore_ament_install']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore_ament_install'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_pkg']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_pkg'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_meta']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_meta'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ros']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ros'
+[0.780s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_package' with type 'ros.ament_python' and name 'my_package'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ignore'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ignore_ament_install'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['colcon_pkg']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'colcon_pkg'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['colcon_meta']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'colcon_meta'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['ros']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ros'
+[0.785s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_srvcli' with type 'ros.ament_python' and name 'py_srvcli'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ignore_ament_install'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['colcon_pkg']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'colcon_pkg'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['colcon_meta']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'colcon_meta'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['ros']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ros'
+[0.791s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tutorial_interfaces' with type 'ros.ament_cmake' and name 'tutorial_interfaces'
+[0.791s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.862s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.867s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.867s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.868s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.872s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ras/DUM-E_ROSCode/ros2_ws/install
+[0.882s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'arduino_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.086s] DEBUG:colcon.colcon_core.verb:Building package 'arduino_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces', 'merge_install': False, 'path': '/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.088s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_args' from command line to 'None'
+[1.088s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target' from command line to 'None'
+[1.088s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.088s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_cache' from command line to 'False'
+[1.088s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_first' from command line to 'False'
+[1.088s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_force_configure' from command line to 'False'
+[1.088s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'ament_cmake_args' from command line to 'None'
+[1.089s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_cmake_args' from command line to 'None'
+[1.089s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.089s] DEBUG:colcon.colcon_core.verb:Building package 'my_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package', 'merge_install': False, 'path': '/home/ras/DUM-E_ROSCode/ros2_ws/src/my_package', 'symlink_install': False, 'test_result_base': None}
+[1.090s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.090s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.090s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.091s] DEBUG:colcon.colcon_core.verb:Building package 'tutorial_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces', 'merge_install': False, 'path': '/home/ras/DUM-E_ROSCode/ros2_ws/src/tutorial_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_args' from command line to 'None'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_target' from command line to 'None'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_clean_cache' from command line to 'False'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_clean_first' from command line to 'False'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_force_configure' from command line to 'False'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'ament_cmake_args' from command line to 'None'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'catkin_cmake_args' from command line to 'None'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.093s] DEBUG:colcon.colcon_core.verb:Building package 'py_srvcli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli', 'merge_install': False, 'path': '/home/ras/DUM-E_ROSCode/ros2_ws/src/py_srvcli', 'symlink_install': False, 'test_result_base': None}
+[1.094s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.097s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.098s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces' with build type 'ament_cmake'
+[1.099s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces'
+[1.107s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.108s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.109s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.127s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ras/DUM-E_ROSCode/ros2_ws/src/tutorial_interfaces' with build type 'ament_cmake'
+[1.128s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ras/DUM-E_ROSCode/ros2_ws/src/tutorial_interfaces'
+[1.129s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.129s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.149s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ras/DUM-E_ROSCode/ros2_ws/src/my_package' with build type 'ament_python'
+[1.150s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_package', 'ament_prefix_path')
+[1.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/hook/ament_prefix_path.ps1'
+[1.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/hook/ament_prefix_path.dsv'
+[1.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/hook/ament_prefix_path.sh'
+[1.159s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.159s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces -DCMAKE_INSTALL_PREFIX=/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces
+[1.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces -- -j4 -l4
+[2.958s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ras/DUM-E_ROSCode/ros2_ws/src/my_package'
+[2.959s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.959s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.289s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/src/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_package build --build-base /home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/build install --record /home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/install.log --single-version-externally-managed install_data
+[14.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/src/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_package build --build-base /home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/build install --record /home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/install.log --single-version-externally-managed install_data
+[14.555s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package' for CMake module files
+[14.562s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package' for CMake config files
+[14.569s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib'
+[14.571s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/bin'
+[14.572s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/pkgconfig/my_package.pc'
+[14.575s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages'
+[14.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_package', 'pythonpath')
+[14.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/hook/pythonpath.ps1'
+[14.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/hook/pythonpath.dsv'
+[14.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/hook/pythonpath.sh'
+[14.601s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/bin'
+[14.606s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_package)
+[14.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/package.ps1'
+[14.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/package.dsv'
+[14.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/package.sh'
+[14.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/package.bash'
+[14.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/my_package/package.zsh'
+[14.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/share/colcon-core/packages/my_package)
+[28.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces -DCMAKE_INSTALL_PREFIX=/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces
+[28.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces -- -j4 -l4
+[43.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces -- -j4 -l4
+[43.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces
+[44.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tutorial_interfaces)
+[44.018s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces' for CMake module files
+[44.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces
+[44.028s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces' for CMake config files
+[44.032s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'cmake_prefix_path')
+[44.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.ps1'
+[44.036s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.dsv'
+[44.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.sh'
+[44.041s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib'
+[44.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'ld_library_path_lib')
+[44.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.ps1'
+[44.047s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.dsv'
+[44.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.sh'
+[44.052s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/bin'
+[44.052s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/pkgconfig/tutorial_interfaces.pc'
+[44.053s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages'
+[44.054s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'pythonpath')
+[44.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.ps1'
+[44.058s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.dsv'
+[44.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.sh'
+[44.063s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/bin'
+[44.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.ps1'
+[44.067s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv'
+[44.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.sh'
+[44.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.bash'
+[44.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.zsh'
+[44.079s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/colcon-core/packages/tutorial_interfaces)
+[44.082s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tutorial_interfaces)
+[44.083s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces' for CMake module files
+[44.089s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces' for CMake config files
+[44.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'cmake_prefix_path')
+[44.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.ps1'
+[44.097s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.dsv'
+[44.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.sh'
+[44.102s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib'
+[44.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'ld_library_path_lib')
+[44.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.ps1'
+[44.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.dsv'
+[44.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.sh'
+[44.112s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/bin'
+[44.113s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/pkgconfig/tutorial_interfaces.pc'
+[44.114s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages'
+[44.114s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'pythonpath')
+[44.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.ps1'
+[44.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.dsv'
+[44.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.sh'
+[44.123s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/bin'
+[44.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.ps1'
+[44.128s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv'
+[44.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.sh'
+[44.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.bash'
+[44.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.zsh'
+[44.141s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/share/colcon-core/packages/tutorial_interfaces)
+[59.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces -- -j4 -l4
+[59.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces
+[59.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduino_interfaces)
+[59.797s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces' for CMake module files
+[59.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces
+[59.805s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces' for CMake config files
+[59.810s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_interfaces', 'cmake_prefix_path')
+[59.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/cmake_prefix_path.ps1'
+[59.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/cmake_prefix_path.dsv'
+[59.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/cmake_prefix_path.sh'
+[59.819s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib'
+[59.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_interfaces', 'ld_library_path_lib')
+[59.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/ld_library_path_lib.ps1'
+[59.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/ld_library_path_lib.dsv'
+[59.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/ld_library_path_lib.sh'
+[59.829s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/bin'
+[59.830s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/pkgconfig/arduino_interfaces.pc'
+[59.831s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages'
+[59.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_interfaces', 'pythonpath')
+[59.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/pythonpath.ps1'
+[59.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/pythonpath.dsv'
+[59.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/pythonpath.sh'
+[59.840s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/bin'
+[59.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.ps1'
+[59.846s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.dsv'
+[59.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.sh'
+[59.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.bash'
+[59.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.zsh'
+[59.858s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/colcon-core/packages/arduino_interfaces)
+[59.865s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduino_interfaces)
+[59.866s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces' for CMake module files
+[59.872s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces' for CMake config files
+[59.876s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_interfaces', 'cmake_prefix_path')
+[59.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/cmake_prefix_path.ps1'
+[59.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/cmake_prefix_path.dsv'
+[59.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/cmake_prefix_path.sh'
+[59.884s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib'
+[59.885s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_interfaces', 'ld_library_path_lib')
+[59.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/ld_library_path_lib.ps1'
+[59.888s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/ld_library_path_lib.dsv'
+[59.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/ld_library_path_lib.sh'
+[59.893s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/bin'
+[59.893s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/pkgconfig/arduino_interfaces.pc'
+[59.894s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages'
+[59.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_interfaces', 'pythonpath')
+[59.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/pythonpath.ps1'
+[59.898s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/pythonpath.dsv'
+[59.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/hook/pythonpath.sh'
+[59.903s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/bin'
+[59.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.ps1'
+[59.908s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.dsv'
+[59.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.sh'
+[59.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.bash'
+[59.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/arduino_interfaces/package.zsh'
+[59.921s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/share/colcon-core/packages/arduino_interfaces)
+[59.923s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ras/DUM-E_ROSCode/ros2_ws/src/py_srvcli' with build type 'ament_python'
+[59.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_srvcli', 'ament_prefix_path')
+[59.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/hook/ament_prefix_path.ps1'
+[59.930s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/hook/ament_prefix_path.dsv'
+[59.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/hook/ament_prefix_path.sh'
+[59.935s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[59.935s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[61.103s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ras/DUM-E_ROSCode/ros2_ws/src/py_srvcli'
+[61.104s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[61.104s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[64.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/src/py_srvcli': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/build install --record /home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/install.log --single-version-externally-managed install_data
+[66.906s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli' for CMake module files
+[66.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/src/py_srvcli' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/build install --record /home/ras/DUM-E_ROSCode/ros2_ws/build/py_srvcli/install.log --single-version-externally-managed install_data
+[66.911s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli' for CMake config files
+[66.915s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib'
+[66.915s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/bin'
+[66.916s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/pkgconfig/py_srvcli.pc'
+[66.917s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages'
+[66.919s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_srvcli', 'pythonpath')
+[66.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/hook/pythonpath.ps1'
+[66.923s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/hook/pythonpath.dsv'
+[66.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/hook/pythonpath.sh'
+[66.928s] Level 1:colcon.colcon_core.environment:checking '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/bin'
+[66.928s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_srvcli)
+[66.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/package.ps1'
+[66.931s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/package.dsv'
+[66.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/package.sh'
+[66.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/package.bash'
+[66.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/py_srvcli/package.zsh'
+[66.940s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/share/colcon-core/packages/py_srvcli)
+[66.941s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[66.943s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[66.944s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[66.945s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[66.983s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[66.983s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[66.984s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[66.997s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[66.998s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[66.999s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ras/DUM-E_ROSCode/ros2_ws/install/local_setup.ps1'
+[67.006s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ras/DUM-E_ROSCode/ros2_ws/install/_local_setup_util_ps1.py'
+[67.013s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ras/DUM-E_ROSCode/ros2_ws/install/setup.ps1'
+[67.021s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ras/DUM-E_ROSCode/ros2_ws/install/local_setup.sh'
+[67.025s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ras/DUM-E_ROSCode/ros2_ws/install/_local_setup_util_sh.py'
+[67.030s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ras/DUM-E_ROSCode/ros2_ws/install/setup.sh'
+[67.041s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ras/DUM-E_ROSCode/ros2_ws/install/local_setup.bash'
+[67.045s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ras/DUM-E_ROSCode/ros2_ws/install/setup.bash'
+[67.054s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ras/DUM-E_ROSCode/ros2_ws/install/local_setup.zsh'
+[67.059s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ras/DUM-E_ROSCode/ros2_ws/install/setup.zsh'

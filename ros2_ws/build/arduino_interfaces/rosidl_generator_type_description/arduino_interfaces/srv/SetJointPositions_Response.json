@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "arduino_interfaces/srv/SetJointPositions_Response",
+      "fields": [
+        {
+          "name": "time_to_complete_ms",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "arduino_interfaces/srv/SetJointPositions_Response",
+      "hash_string": "RIHS01_726d671e51718f8b31c64f50488ddfa99073992da7e6e3e661b2acf93eef9ca6"
+    }
+  ]
+}

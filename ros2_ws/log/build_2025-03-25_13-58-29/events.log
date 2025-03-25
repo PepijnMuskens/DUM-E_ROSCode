@@ -1,0 +1,261 @@
+[0.000000] (-) TimerEvent: {}
+[0.000914] (arduino_interfaces) JobQueued: {'identifier': 'arduino_interfaces', 'dependencies': OrderedDict()}
+[0.002059] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.002148] (tutorial_interfaces) JobQueued: {'identifier': 'tutorial_interfaces', 'dependencies': OrderedDict()}
+[0.002213] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict({'arduino_interfaces': '/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces', 'tutorial_interfaces': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces'})}
+[0.002297] (arduino_interfaces) JobStarted: {'identifier': 'arduino_interfaces'}
+[0.028763] (tutorial_interfaces) JobStarted: {'identifier': 'tutorial_interfaces'}
+[0.049429] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.083239] (arduino_interfaces) JobProgress: {'identifier': 'arduino_interfaces', 'progress': 'cmake'}
+[0.088983] (arduino_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces'], 'cwd': '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras', 'SSH_CLIENT': '145.93.117.102 55360 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ras', 'OLDPWD': '/home/ras/DUM-E_ROSCode', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ras', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/opt/ros/jazzy/bin:/home/ras/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '145.93.117.102 55360 145.93.236.46 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy'}), 'shell': False}
+[0.099177] (-) TimerEvent: {}
+[0.101009] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'cmake'}
+[0.103471] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/ras/DUM-E_ROSCode/ros2_ws/src/tutorial_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces'], 'cwd': '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ras', 'SSH_CLIENT': '145.93.117.102 55360 22', 'LC_TIME': 'nl_NL.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ras', 'OLDPWD': '/home/ras/DUM-E_ROSCode', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'nl_NL.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ras', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/opt/ros/jazzy/bin:/home/ras/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'nl_NL.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'nl_NL.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'nl_NL.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'nl_NL.UTF-8', 'LC_IDENTIFICATION': 'nl_NL.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '145.93.117.102 55360 145.93.236.46 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'nl_NL.UTF-8', 'LC_PAPER': 'nl_NL.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ras/DUM-E_ROSCode/ros2_ws/install/tutorial_interfaces:/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy'}), 'shell': False}
+[0.199410] (-) TimerEvent: {}
+[0.301899] (-) TimerEvent: {}
+[0.406311] (-) TimerEvent: {}
+[0.510327] (-) TimerEvent: {}
+[0.523954] (arduino_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.529747] (tutorial_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.611925] (-) TimerEvent: {}
+[0.714211] (-) TimerEvent: {}
+[0.815084] (-) TimerEvent: {}
+[0.886296] (tutorial_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.888655] (arduino_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.915623] (-) TimerEvent: {}
+[0.982001] (arduino_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.986015] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.015922] (-) TimerEvent: {}
+[1.116672] (-) TimerEvent: {}
+[1.218472] (-) TimerEvent: {}
+[1.319433] (-) TimerEvent: {}
+[1.420448] (-) TimerEvent: {}
+[1.522900] (-) TimerEvent: {}
+[1.583831] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.606181] (arduino_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.625937] (-) TimerEvent: {}
+[1.627068] (tutorial_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.627856] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.628682] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.655074] (arduino_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.657843] (arduino_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.659998] (arduino_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.685928] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.722917] (arduino_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.726119] (-) TimerEvent: {}
+[1.827892] (-) TimerEvent: {}
+[1.928617] (-) TimerEvent: {}
+[2.031869] (-) TimerEvent: {}
+[2.132588] (-) TimerEvent: {}
+[2.234884] (-) TimerEvent: {}
+[2.298266] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.337000] (-) TimerEvent: {}
+[2.353184] (tutorial_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.356886] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.360893] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.373071] (arduino_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.393150] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.422006] (arduino_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.426358] (arduino_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.427145] (arduino_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.437141] (-) TimerEvent: {}
+[2.455756] (arduino_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.537295] (-) TimerEvent: {}
+[2.638086] (-) TimerEvent: {}
+[2.740002] (-) TimerEvent: {}
+[2.842210] (-) TimerEvent: {}
+[2.944911] (-) TimerEvent: {}
+[3.054140] (-) TimerEvent: {}
+[3.155116] (-) TimerEvent: {}
+[3.259923] (-) TimerEvent: {}
+[3.346005] (tutorial_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.360082] (-) TimerEvent: {}
+[3.406612] (arduino_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.460287] (-) TimerEvent: {}
+[3.561515] (-) TimerEvent: {}
+[3.662490] (-) TimerEvent: {}
+[3.763258] (-) TimerEvent: {}
+[3.864524] (-) TimerEvent: {}
+[3.965171] (-) TimerEvent: {}
+[4.065862] (-) TimerEvent: {}
+[4.113677] (tutorial_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[4.166027] (-) TimerEvent: {}
+[4.186935] (arduino_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.244511] (arduino_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.267579] (-) TimerEvent: {}
+[4.368257] (-) TimerEvent: {}
+[4.468964] (-) TimerEvent: {}
+[4.489124] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[4.571882] (-) TimerEvent: {}
+[4.597899] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[4.672057] (-) TimerEvent: {}
+[4.689567] (arduino_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.718285] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.772248] (-) TimerEvent: {}
+[4.846234] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.872408] (-) TimerEvent: {}
+[4.973883] (-) TimerEvent: {}
+[5.034045] (arduino_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[5.044292] (arduino_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):\n'}
+[5.049273] (arduino_interfaces) StderrLine: {'line': b'  rosidl_generate_interfaces() the passed file\n'}
+[5.050194] (arduino_interfaces) StderrLine: {'line': b"  'srv/SetStepperMotorPositions.srv' doesn't exist relative to the\n"}
+[5.050923] (arduino_interfaces) StderrLine: {'line': b'  CMAKE_CURRENT_SOURCE_DIR\n'}
+[5.051547] (arduino_interfaces) StderrLine: {'line': b"  '/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces'\n"}
+[5.053105] (arduino_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.053909] (arduino_interfaces) StderrLine: {'line': b'  CMakeLists.txt:16 (rosidl_generate_interfaces)\n'}
+[5.054931] (arduino_interfaces) StderrLine: {'line': b'\n'}
+[5.055800] (arduino_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[5.056623] (arduino_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.070858] (arduino_interfaces) CommandEnded: {'returncode': 1}
+[5.074061] (-) TimerEvent: {}
+[5.157971] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[5.172534] (arduino_interfaces) JobEnded: {'identifier': 'arduino_interfaces', 'rc': 1}
+[5.174235] (-) TimerEvent: {}
+[5.274991] (-) TimerEvent: {}
+[5.286632] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[5.375284] (-) TimerEvent: {}
+[5.472565] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 'SIGINT'}
+[5.475440] (-) TimerEvent: {}
+[5.576085] (-) TimerEvent: {}
+[5.676908] (-) TimerEvent: {}
+[5.777934] (-) TimerEvent: {}
+[5.878927] (-) TimerEvent: {}
+[5.979864] (-) TimerEvent: {}
+[6.080467] (-) TimerEvent: {}
+[6.181115] (-) TimerEvent: {}
+[6.281760] (-) TimerEvent: {}
+[6.382383] (-) TimerEvent: {}
+[6.483049] (-) TimerEvent: {}
+[6.583623] (-) TimerEvent: {}
+[6.684375] (-) TimerEvent: {}
+[6.785278] (-) TimerEvent: {}
+[6.885984] (-) TimerEvent: {}
+[6.986694] (-) TimerEvent: {}
+[7.087686] (-) TimerEvent: {}
+[7.188483] (-) TimerEvent: {}
+[7.289105] (-) TimerEvent: {}
+[7.389677] (-) TimerEvent: {}
+[7.490315] (-) TimerEvent: {}
+[7.590982] (-) TimerEvent: {}
+[7.691592] (-) TimerEvent: {}
+[7.792247] (-) TimerEvent: {}
+[7.892847] (-) TimerEvent: {}
+[7.993436] (-) TimerEvent: {}
+[8.094078] (-) TimerEvent: {}
+[8.194622] (-) TimerEvent: {}
+[8.295259] (-) TimerEvent: {}
+[8.395909] (-) TimerEvent: {}
+[8.415853] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[8.496098] (-) TimerEvent: {}
+[8.596687] (-) TimerEvent: {}
+[8.697313] (-) TimerEvent: {}
+[8.797884] (-) TimerEvent: {}
+[8.898547] (-) TimerEvent: {}
+[8.999165] (-) TimerEvent: {}
+[9.099793] (-) TimerEvent: {}
+[9.200345] (-) TimerEvent: {}
+[9.301017] (-) TimerEvent: {}
+[9.401647] (-) TimerEvent: {}
+[9.502287] (-) TimerEvent: {}
+[9.602864] (-) TimerEvent: {}
+[9.703493] (-) TimerEvent: {}
+[9.804300] (-) TimerEvent: {}
+[9.905053] (-) TimerEvent: {}
+[10.005810] (-) TimerEvent: {}
+[10.106567] (-) TimerEvent: {}
+[10.207450] (-) TimerEvent: {}
+[10.308145] (-) TimerEvent: {}
+[10.408889] (-) TimerEvent: {}
+[10.509585] (-) TimerEvent: {}
+[10.610346] (-) TimerEvent: {}
+[10.711019] (-) TimerEvent: {}
+[10.811786] (-) TimerEvent: {}
+[10.912439] (-) TimerEvent: {}
+[11.013081] (-) TimerEvent: {}
+[11.113782] (-) TimerEvent: {}
+[11.214542] (-) TimerEvent: {}
+[11.315231] (-) TimerEvent: {}
+[11.415966] (-) TimerEvent: {}
+[11.516941] (-) TimerEvent: {}
+[11.617842] (-) TimerEvent: {}
+[11.718478] (-) TimerEvent: {}
+[11.819103] (-) TimerEvent: {}
+[11.919797] (-) TimerEvent: {}
+[12.020491] (-) TimerEvent: {}
+[12.121366] (-) TimerEvent: {}
+[12.222285] (-) TimerEvent: {}
+[12.323307] (-) TimerEvent: {}
+[12.424029] (-) TimerEvent: {}
+[12.524588] (-) TimerEvent: {}
+[12.579619] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.624789] (-) TimerEvent: {}
+[12.725418] (-) TimerEvent: {}
+[12.826189] (-) TimerEvent: {}
+[12.926825] (-) TimerEvent: {}
+[13.027421] (-) TimerEvent: {}
+[13.128023] (-) TimerEvent: {}
+[13.228573] (-) TimerEvent: {}
+[13.329253] (-) TimerEvent: {}
+[13.429949] (-) TimerEvent: {}
+[13.530558] (-) TimerEvent: {}
+[13.631229] (-) TimerEvent: {}
+[13.731812] (-) TimerEvent: {}
+[13.832357] (-) TimerEvent: {}
+[13.932960] (-) TimerEvent: {}
+[14.033489] (-) TimerEvent: {}
+[14.134044] (-) TimerEvent: {}
+[14.218169] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.234212] (-) TimerEvent: {}
+[14.244439] (tutorial_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[14.334760] (-) TimerEvent: {}
+[14.435401] (-) TimerEvent: {}
+[14.536045] (-) TimerEvent: {}
+[14.636629] (-) TimerEvent: {}
+[14.737247] (-) TimerEvent: {}
+[14.837957] (-) TimerEvent: {}
+[14.934988] (tutorial_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[14.938192] (-) TimerEvent: {}
+[15.038879] (-) TimerEvent: {}
+[15.139528] (-) TimerEvent: {}
+[15.240213] (-) TimerEvent: {}
+[15.340882] (-) TimerEvent: {}
+[15.441658] (-) TimerEvent: {}
+[15.542550] (-) TimerEvent: {}
+[15.643654] (-) TimerEvent: {}
+[15.744412] (-) TimerEvent: {}
+[15.845673] (-) TimerEvent: {}
+[15.950823] (-) TimerEvent: {}
+[16.051603] (-) TimerEvent: {}
+[16.152494] (-) TimerEvent: {}
+[16.254972] (-) TimerEvent: {}
+[16.356434] (-) TimerEvent: {}
+[16.460244] (-) TimerEvent: {}
+[16.561554] (-) TimerEvent: {}
+[16.662316] (-) TimerEvent: {}
+[16.766905] (-) TimerEvent: {}
+[16.867845] (-) TimerEvent: {}
+[16.969687] (-) TimerEvent: {}
+[17.070509] (-) TimerEvent: {}
+[17.171203] (-) TimerEvent: {}
+[17.271902] (-) TimerEvent: {}
+[17.374169] (-) TimerEvent: {}
+[17.475295] (-) TimerEvent: {}
+[17.529913] (tutorial_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[17.575472] (-) TimerEvent: {}
+[17.676129] (-) TimerEvent: {}
+[17.776877] (-) TimerEvent: {}
+[17.838333] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[17.877045] (-) TimerEvent: {}
+[17.977695] (-) TimerEvent: {}
+[18.050710] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.059936] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.079452] (tutorial_interfaces) StdoutLine: {'line': b'-- Configuring done (17.9s)\n'}
+[18.080085] (-) TimerEvent: {}
+[18.180592] (-) TimerEvent: {}
+[18.281254] (-) TimerEvent: {}
+[18.330103] (tutorial_interfaces) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[18.381444] (-) TimerEvent: {}
+[18.389017] (tutorial_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/ras/DUM-E_ROSCode/ros2_ws/build/tutorial_interfaces\n'}
+[18.433452] (tutorial_interfaces) JobEnded: {'identifier': 'tutorial_interfaces', 'rc': 'SIGINT'}
+[18.447489] (py_srvcli) JobSkipped: {'identifier': 'py_srvcli'}
+[18.448091] (-) EventReactorShutdown: {}

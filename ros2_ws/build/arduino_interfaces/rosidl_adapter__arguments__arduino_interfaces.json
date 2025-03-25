@@ -2,6 +2,6 @@
   "package_name": "arduino_interfaces",
   "non_idl_tuples": [
     "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces:msg/Num.msg",
-    "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces:srv/SetStepperMotorPositions.srv"
+    "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces:srv/SetJointPositions.srv"
   ]
 }

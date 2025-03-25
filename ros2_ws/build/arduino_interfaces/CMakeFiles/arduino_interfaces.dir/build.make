@@ -67,7 +67,7 @@ include CMakeFiles/arduino_interfaces.dir/compiler_depend.make
 include CMakeFiles/arduino_interfaces.dir/progress.make
 
 CMakeFiles/arduino_interfaces: /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/msg/Num.msg
-CMakeFiles/arduino_interfaces: /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/srv/SetStepperMotorPositions.srv
+CMakeFiles/arduino_interfaces: /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/srv/SetJointPositions.srv
 CMakeFiles/arduino_interfaces: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 
 arduino_interfaces: CMakeFiles/arduino_interfaces

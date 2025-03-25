@@ -17,11 +17,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/detail/num__traits.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
   "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/detail/num__type_support.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
   "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
-  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__builder.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
-  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__struct.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
-  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__traits.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
-  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
-  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/set_stepper_motor_positions.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
+  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__builder.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
+  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__struct.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
+  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__traits.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
+  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
+  "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/srv/set_joint_positions.hpp" "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_cpp/arduino_interfaces/msg/num.hpp"
   )
 
 

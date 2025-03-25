@@ -232,8 +232,8 @@ CMakeFiles/arduino_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_g
  /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/msg/detail/num__struct.h \
  /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/msg/detail/num__functions.h \
- /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.h \
- /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__struct.h \
+ /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__type_support.h \
+ /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__struct.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__functions.h
+ /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_c/arduino_interfaces/srv/detail/set_joint_positions__functions.h

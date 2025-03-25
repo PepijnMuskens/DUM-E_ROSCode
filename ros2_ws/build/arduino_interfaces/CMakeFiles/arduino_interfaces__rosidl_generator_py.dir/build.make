@@ -83,30 +83,30 @@ CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ardui
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/msg/_num_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces/msg/_num_s.c -o CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/msg/_num_s.c.s
 
-CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o: CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/flags.make
-CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o: rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c
-CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o: CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o -MF CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o.d -o CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o -c /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c
+CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o: CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o: rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c
+CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o: CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o -MF CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o.d -o CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o -c /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c
 
-CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c > CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.i
+CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c > CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.i
 
-CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c -o CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.s
+CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c -o CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.s
 
 # Object files for target arduino_interfaces__rosidl_generator_py
 arduino_interfaces__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/msg/_num_s.c.o" \
-"CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o"
+"CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o"
 
 # External object files for target arduino_interfaces__rosidl_generator_py
 arduino_interfaces__rosidl_generator_py_EXTERNAL_OBJECTS =
 
 libarduino_interfaces__rosidl_generator_py.so: CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/msg/_num_s.c.o
-libarduino_interfaces__rosidl_generator_py.so: CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c.o
+libarduino_interfaces__rosidl_generator_py.so: CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c.o
 libarduino_interfaces__rosidl_generator_py.so: CMakeFiles/arduino_interfaces__rosidl_generator_py.dir/build.make
 libarduino_interfaces__rosidl_generator_py.so: libarduino_interfaces__rosidl_typesupport_c.so
 libarduino_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so

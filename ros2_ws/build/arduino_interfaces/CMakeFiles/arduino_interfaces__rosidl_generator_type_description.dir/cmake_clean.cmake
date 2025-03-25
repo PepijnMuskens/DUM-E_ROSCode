@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/arduino_interfaces__rosidl_generator_type_description"
   "rosidl_generator_type_description/arduino_interfaces/msg/Num.json"
-  "rosidl_generator_type_description/arduino_interfaces/srv/SetStepperMotorPositions.json"
+  "rosidl_generator_type_description/arduino_interfaces/srv/SetJointPositions.json"
 )
 
 # Per-language clean rules from dependency scanning.

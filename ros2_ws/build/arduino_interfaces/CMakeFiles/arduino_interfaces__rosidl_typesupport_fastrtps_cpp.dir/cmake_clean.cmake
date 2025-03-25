@@ -1,14 +1,14 @@
 file(REMOVE_RECURSE
   "CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.o"
   "CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.o.d"
-  "CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.o"
-  "CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp.o.d"
+  "CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.o"
+  "CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp.o.d"
   "libarduino_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
   "libarduino_interfaces__rosidl_typesupport_fastrtps_cpp.so"
   "rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp"
-  "rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_stepper_motor_positions__type_support.cpp"
-  "rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/dds_fastrtps/set_joint_positions__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_fastrtps_cpp.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

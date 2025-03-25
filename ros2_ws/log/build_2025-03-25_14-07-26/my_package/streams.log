@@ -1,0 +1,22 @@
+[7.995s] Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/src/my_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_package build --build-base /home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/build install --record /home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/install.log --single-version-externally-managed install_data
+[9.443s] running egg_info
+[9.550s] writing ../../build/my_package/my_package.egg-info/PKG-INFO
+[9.552s] writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt
+[9.556s] writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt
+[9.557s] writing requirements to ../../build/my_package/my_package.egg-info/requires.txt
+[9.560s] writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt
+[9.781s] reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[9.799s] adding license file 'LICENSE'
+[9.800s] writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[9.802s] running build
+[9.803s] running build_py
+[9.807s] running install
+[9.832s] running install_lib
+[9.944s] running install_data
+[9.947s] running install_egg_info
+[10.061s] removing '/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info' (and everything under it)
+[10.064s] Copying ../../build/my_package/my_package.egg-info to /home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages/my_package-0.0.0-py3.12.egg-info
+[10.070s] running install_scripts
+[11.013s] Installing my_node script to /home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/my_package
+[11.015s] writing list of installed files to '/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/install.log'
+[11.173s] Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/src/my_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_package build --build-base /home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/build install --record /home/ras/DUM-E_ROSCode/ros2_ws/build/my_package/install.log --single-version-externally-managed install_data

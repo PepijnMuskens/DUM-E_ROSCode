@@ -70,11 +70,11 @@ include /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfa
 /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.c
 /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/msg/_num.py
-/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions.py
+/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions.py
 /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/msg/__init__.py
 /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/__init__.py
 /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/msg/_num_s.c
-/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c
+/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c
 
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -90,7 +90,7 @@ rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesuppo
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/arduino_interfaces/msg/Num.idl
-rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/arduino_interfaces/srv/SetStepperMotorPositions.idl
+rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/arduino_interfaces/srv/SetJointPositions.idl
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -106,8 +106,8 @@ rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesuppo
 rosidl_generator_py/arduino_interfaces/msg/_num.py: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/arduino_interfaces/msg/_num.py
 
-rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions.py: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions.py
+rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions.py: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions.py
 
 rosidl_generator_py/arduino_interfaces/msg/__init__.py: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/arduino_interfaces/msg/__init__.py
@@ -118,8 +118,8 @@ rosidl_generator_py/arduino_interfaces/srv/__init__.py: rosidl_generator_py/ardu
 rosidl_generator_py/arduino_interfaces/msg/_num_s.c: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/arduino_interfaces/msg/_num_s.c
 
-rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c
+rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c
 
 arduino_interfaces__py: /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py
 arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/_arduino_interfaces_s.ep.rosidl_typesupport_c.c
@@ -129,8 +129,8 @@ arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/msg/__init__.py
 arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/msg/_num.py
 arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/msg/_num_s.c
 arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/__init__.py
-arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions.py
-arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/_set_stepper_motor_positions_s.c
+arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions.py
+arduino_interfaces__py: rosidl_generator_py/arduino_interfaces/srv/_set_joint_positions_s.c
 arduino_interfaces__py: /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/arduino_interfaces__py/CMakeFiles/arduino_interfaces__py.dir/build.make
 .PHONY : arduino_interfaces__py
 

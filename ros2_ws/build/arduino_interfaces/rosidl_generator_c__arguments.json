@@ -4,11 +4,11 @@
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
     "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces:msg/Num.idl",
-    "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces:srv/SetStepperMotorPositions.idl"
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces:srv/SetJointPositions.idl"
   ],
   "ros_interface_files": [
     "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/msg/Num.msg",
-    "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/srv/SetStepperMotorPositions.srv"
+    "/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces/srv/SetJointPositions.srv"
   ],
   "ros_interface_dependencies": [
     "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
@@ -36,13 +36,13 @@
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces/msg/Num.idl",
-    "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces/srv/SetStepperMotorPositions.idl",
+    "/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_adapter/arduino_interfaces/srv/SetJointPositions.idl",
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
   ],
   "type_description_tuples": [
     "msg/Num.idl:/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_type_description/arduino_interfaces/msg/Num.json",
-    "srv/SetStepperMotorPositions.idl:/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_type_description/arduino_interfaces/srv/SetStepperMotorPositions.json"
+    "srv/SetJointPositions.idl:/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_type_description/arduino_interfaces/srv/SetJointPositions.json"
   ]
 }

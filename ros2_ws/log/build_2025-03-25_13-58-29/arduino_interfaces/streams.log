@@ -1,0 +1,30 @@
+[0.094s] Invoking command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces -DCMAKE_INSTALL_PREFIX=/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces
+[0.522s] -- The C compiler identification is GNU 13.3.0
+[0.887s] -- The CXX compiler identification is GNU 13.3.0
+[0.980s] -- Detecting C compiler ABI info
+[1.605s] -- Detecting C compiler ABI info - done
+[1.653s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.656s] -- Detecting C compile features
+[1.658s] -- Detecting C compile features - done
+[1.721s] -- Detecting CXX compiler ABI info
+[2.371s] -- Detecting CXX compiler ABI info - done
+[2.420s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.424s] -- Detecting CXX compile features
+[2.425s] -- Detecting CXX compile features - done
+[2.454s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.405s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.185s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.243s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.688s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.032s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.043s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[5.048s]   rosidl_generate_interfaces() the passed file
+[5.048s]   'srv/SetStepperMotorPositions.srv' doesn't exist relative to the
+[5.049s]   CMAKE_CURRENT_SOURCE_DIR
+[5.050s]   '/home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces'
+[5.051s] Call Stack (most recent call first):
+[5.052s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[5.053s] 
+[5.054s] [0m
+[5.055s] -- Configuring incomplete, errors occurred!
+[5.069s] Invoked command in '/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ras/DUM-E_ROSCode/ros2_ws/install/py_srvcli:/home/ras/DUM-E_ROSCode/ros2_ws/install/my_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces -DCMAKE_INSTALL_PREFIX=/home/ras/DUM-E_ROSCode/ros2_ws/install/arduino_interfaces

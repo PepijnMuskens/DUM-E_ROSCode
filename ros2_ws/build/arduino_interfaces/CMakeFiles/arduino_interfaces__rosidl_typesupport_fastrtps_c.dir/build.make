@@ -78,7 +78,7 @@ rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupp
 rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/jazzy/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em
 rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/jazzy/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/arduino_interfaces/msg/Num.idl
-rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/arduino_interfaces/srv/SetStepperMotorPositions.idl
+rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/arduino_interfaces/srv/SetJointPositions.idl
 rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -88,11 +88,11 @@ rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupp
 rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp
 
-rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_fastrtps_c.h
 
-rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp
+rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp
 
 CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.o: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp
@@ -108,30 +108,30 @@ CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp -o CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.s
 
-CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp
-CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o -MF CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o.d -o CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o -c /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp
+CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp
+CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o -MF CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o.d -o CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o -c /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp
 
-CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp > CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.i
+CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp > CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.i
 
-CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp -o CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.s
+CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp -o CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.s
 
 # Object files for target arduino_interfaces__rosidl_typesupport_fastrtps_c
 arduino_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.o" \
-"CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o"
+"CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o"
 
 # External object files for target arduino_interfaces__rosidl_typesupport_fastrtps_c
 arduino_interfaces__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
 libarduino_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp.o
-libarduino_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp.o
+libarduino_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp.o
 libarduino_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
 libarduino_interfaces__rosidl_typesupport_fastrtps_c.so: libarduino_interfaces__rosidl_generator_c.so
 libarduino_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
@@ -159,8 +159,8 @@ CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/clean:
 
 CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/arduino_interfaces/msg/detail/num__type_support_c.cpp
-CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support_c.cpp
+CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/arduino_interfaces/srv/detail/set_joint_positions__type_support_c.cpp
 	cd /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/src/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/arduino_interfaces__rosidl_typesupport_fastrtps_c.dir/depend
 

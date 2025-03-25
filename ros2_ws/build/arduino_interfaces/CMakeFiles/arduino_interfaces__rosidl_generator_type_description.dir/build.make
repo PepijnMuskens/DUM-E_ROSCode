@@ -67,21 +67,21 @@ include CMakeFiles/arduino_interfaces__rosidl_generator_type_description.dir/com
 include CMakeFiles/arduino_interfaces__rosidl_generator_type_description.dir/progress.make
 
 CMakeFiles/arduino_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/arduino_interfaces/msg/Num.json
-CMakeFiles/arduino_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/arduino_interfaces/srv/SetStepperMotorPositions.json
+CMakeFiles/arduino_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/arduino_interfaces/srv/SetJointPositions.json
 
 rosidl_generator_type_description/arduino_interfaces/msg/Num.json: /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/arduino_interfaces/msg/Num.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/arduino_interfaces/msg/Num.json: rosidl_adapter/arduino_interfaces/msg/Num.idl
-rosidl_generator_type_description/arduino_interfaces/msg/Num.json: rosidl_adapter/arduino_interfaces/srv/SetStepperMotorPositions.idl
+rosidl_generator_type_description/arduino_interfaces/msg/Num.json: rosidl_adapter/arduino_interfaces/srv/SetJointPositions.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
 	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/ras/DUM-E_ROSCode/ros2_ws/build/arduino_interfaces/rosidl_generator_type_description__arguments.json
 
-rosidl_generator_type_description/arduino_interfaces/srv/SetStepperMotorPositions.json: rosidl_generator_type_description/arduino_interfaces/msg/Num.json
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/arduino_interfaces/srv/SetStepperMotorPositions.json
+rosidl_generator_type_description/arduino_interfaces/srv/SetJointPositions.json: rosidl_generator_type_description/arduino_interfaces/msg/Num.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/arduino_interfaces/srv/SetJointPositions.json
 
 arduino_interfaces__rosidl_generator_type_description: CMakeFiles/arduino_interfaces__rosidl_generator_type_description
 arduino_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/arduino_interfaces/msg/Num.json
-arduino_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/arduino_interfaces/srv/SetStepperMotorPositions.json
+arduino_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/arduino_interfaces/srv/SetJointPositions.json
 arduino_interfaces__rosidl_generator_type_description: CMakeFiles/arduino_interfaces__rosidl_generator_type_description.dir/build.make
 .PHONY : arduino_interfaces__rosidl_generator_type_description
 

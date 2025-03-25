@@ -71,11 +71,11 @@ CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/
 CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/detail/num__struct.hpp
 CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/detail/num__traits.hpp
 CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/detail/num__type_support.hpp
-CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/set_stepper_motor_positions.hpp
-CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__builder.hpp
-CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__struct.hpp
-CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__traits.hpp
-CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.hpp
+CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/set_joint_positions.hpp
+CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__builder.hpp
+CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__struct.hpp
+CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__traits.hpp
+CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.hpp
 CMakeFiles/arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: /opt/ros/jazzy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -98,7 +98,7 @@ rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: /opt/ros/jazzy/share/rosidl
 rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: rosidl_adapter/arduino_interfaces/msg/Num.idl
-rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: rosidl_adapter/arduino_interfaces/srv/SetStepperMotorPositions.idl
+rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: rosidl_adapter/arduino_interfaces/srv/SetJointPositions.idl
 rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/arduino_interfaces/msg/num.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -117,20 +117,20 @@ rosidl_generator_cpp/arduino_interfaces/msg/detail/num__traits.hpp: rosidl_gener
 rosidl_generator_cpp/arduino_interfaces/msg/detail/num__type_support.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/msg/detail/num__type_support.hpp
 
-rosidl_generator_cpp/arduino_interfaces/srv/set_stepper_motor_positions.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/set_stepper_motor_positions.hpp
+rosidl_generator_cpp/arduino_interfaces/srv/set_joint_positions.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/set_joint_positions.hpp
 
-rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__builder.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__builder.hpp
+rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__builder.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__builder.hpp
 
-rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__struct.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__struct.hpp
+rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__struct.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__struct.hpp
 
-rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__traits.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__traits.hpp
+rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__traits.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__traits.hpp
 
-rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.hpp
+rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.hpp
 
 rosidl_generator_cpp/arduino_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arduino_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
@@ -142,11 +142,11 @@ arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/detail/num_
 arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/detail/num__type_support.hpp
 arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/num.hpp
 arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
-arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__builder.hpp
-arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__struct.hpp
-arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__traits.hpp
-arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_stepper_motor_positions__type_support.hpp
-arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/set_stepper_motor_positions.hpp
+arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__builder.hpp
+arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__struct.hpp
+arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__traits.hpp
+arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/detail/set_joint_positions__type_support.hpp
+arduino_interfaces__cpp: rosidl_generator_cpp/arduino_interfaces/srv/set_joint_positions.hpp
 arduino_interfaces__cpp: CMakeFiles/arduino_interfaces__cpp.dir/build.make
 .PHONY : arduino_interfaces__cpp
 
