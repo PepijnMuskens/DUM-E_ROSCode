@@ -2,6 +2,7 @@ import serial
 import threading
 import time
 import queue
+import struct
 
 class UART:
     def __init__(self, port, baud_rate=115200):
@@ -303,7 +304,25 @@ class AruinoUART(UART):
                 return (response)
             except ValueError:
                 print(f"[ERROR] Invalid error response from {self.port}: {response}")
-        return None
+        return None 
+    
+    def set_postition_quick(self, baseAngle, rotation, endRotation, endAngle):
+            """
+            set arduino position 
+            """
+            print(f"[Set positions]: M B{baseAngle} W{rotation} ER{endRotation} EA{endAngle}")
+            
+            packet = struct.pack(
+            '>c B c h c h c h c h',     # Format string
+            b'C', 1,                    # Command header
+            b'B', baseAngle,            # 'B' value (16-bit)
+            b'W', rotation,             # 'W' value (16-bit)
+            b'R', endRotation,
+            b'A', endAngle
+            )           
+            self.ser.write(packet)
+            return None
+    
     
     def close(self):
         """
