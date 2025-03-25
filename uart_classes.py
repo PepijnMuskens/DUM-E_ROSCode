@@ -287,7 +287,7 @@ class ODriveUART(UART):
 class AruinoUART(UART):
     def __init__(self, port, baud_rate=115200):
         """
-        Initializes an ODrive instance using a given UART port.
+        Initializes an Arduino instance using a given UART port.
         """
         super().__init__(port, baud_rate)
         print(f"[INFO] Connected to Arduino on {port} at {baud_rate} baud.")
@@ -304,14 +304,6 @@ class AruinoUART(UART):
             except ValueError:
                 print(f"[ERROR] Invalid error response from {self.port}: {response}")
         return None
-
-    def reboot(self): # --> works with the "self.get_active_errors()" workaround (as a first 'dummy' command)
-        """
-        Roboot the Arduino
-        """
-        self.queue_command("sr")
-        print(f"[INFO] Odrive at {self.port} rebooting")
-        return self.get_active_errors()
     
     def close(self):
         """
