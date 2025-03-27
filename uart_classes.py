@@ -307,22 +307,55 @@ class AruinoUART(UART):
         return None 
     
     def set_postition_quick(self, baseAngle, rotation, endRotation, endAngle):
-            """
-            set arduino position 
-            """
-            print(f"[Set positions]: M B{baseAngle} W{rotation} ER{endRotation} EA{endAngle}")
-            
-            packet = struct.pack(
-            '>c B c h c h c h c h',     # Format string
-            b'C', 1,                    # Command header
-            b'B', baseAngle,            # 'B' value (16-bit)
-            b'W', rotation,             # 'W' value (16-bit)
-            b'R', endRotation,
-            b'A', endAngle
-            )           
-            self.ser.write(packet)
-            return None
+        """
+        set arduino position 
+        """
+        print(f"[Set positions]: M B{baseAngle} W{rotation} ER{endRotation} EA{endAngle}")
+        
+        packet = struct.pack(
+        '>c B c h c h c h c h',     # Format string
+        b'C', 1,                    # Command header
+        b'B', baseAngle,            # 'B' value (16-bit)
+        b'W', rotation,             # 'W' value (16-bit)
+        b'R', endRotation,
+        b'A', endAngle
+        )           
+        self.ser.write(packet)
+        return None
+        
+    def set_motor_config(self,unit, velocity,acceleration, sleep, block, drv):
+        """
+        arduino motor config
+        """
+        print(f"[Configuring {unit}]: velo: {velocity} accel: {acceleration} sleep: {sleep} block: {block} drive: {drv}")
+        bitmask = (sleep << 2) | (block << 1) | drv
+        
+        packet = struct.pack(
+        '>c B c h c h c h c h',     # Format string
+        b'C', 2,                    # Command header
+        b'B', unit,                 # 'B' value (16-bit)
+        b'W', acceleration,         # 'W' value (16-bit)
+        b'R', velocity,
+        b'A', bitmask
+        )           
+        self.ser.write(packet)
+        return None
     
+    def start_homing_proc(self):
+        """
+        makes arduino go crazy
+        """
+        packet = struct.pack(
+        '>c B c h c h c h c h',     # Format string
+        b'C', 3,                    # Command header
+        b'B', 10,                   # 'B' value (16-bit)
+        b'W', 0,                    # 'W' value (16-bit)
+        b'R', 0,
+        b'A', 0
+        )           
+        self.ser.write(packet)
+        return None
+
     
     def close(self):
         """
