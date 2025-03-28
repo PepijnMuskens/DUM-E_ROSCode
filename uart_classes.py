@@ -11,7 +11,7 @@ class UART:
         """
         self.port = port
         self.baud_rate = baud_rate
-        self.ser = serial.Serial(port, baud_rate, timeout=1.0)
+        self.ser = serial.Serial(port, baud_rate, timeout=0.1)
         self.lock = threading.Lock()  # Ensure thread safety for serial access
         self.command_queue = queue.Queue()
         self.running = True
@@ -209,13 +209,6 @@ class ODriveUART(UART):
                 print(f"[ERROR] Invalid homed state response from {self.port}: {response}")
         return None
 
-    def set_joint_position(self, pos):
-        """
-        Sets the joint position estimate.
-        """
-        self.queue_command(f"r axis0.pos_estimate {pos}")
-        print(f"[INFO] Set pos of ODrive at {self.port} to: {pos}")
-
     def identify_on(self):
         """
         Turns on the ODrive identification LED.
@@ -230,17 +223,13 @@ class ODriveUART(UART):
         self.queue_command("w identify 0")
         print(f"[INFO] ODrive at {self.port} stopped identifying.")
 
-    def move_pos(self, target_pos=0.0):
+    def move_pos(self, target_pos: float, target_vel: float):
         """
         Moves to a new position setpoint relative to the current joint position.
         """
-        current_pos = self.get_joint_position()
-        if current_pos is not None:
-            new_pos = current_pos + target_pos
-            self.queue_command(f"t 0 {new_pos}")
-            print(f"[INFO] ODrive at {self.port} moving to {new_pos}")
-        else:
-            print(f"[ERROR] Unable to read current position for ODrive at {self.port}.")
+        self.queue_command(f"p 0 {target_pos} {target_vel}")
+        print(f"[INFO] ODrive at {self.port} moving to {target_pos}")
+        
 
     def home(self):
         """
@@ -292,21 +281,8 @@ class AruinoUART(UART):
         """
         super().__init__(port, baud_rate)
         print(f"[INFO] Connected to Arduino on {port} at {baud_rate} baud.")
-
-    def set_postition(self, baseAngle, rotation, endRotation, endAngle):
-        """
-        set arduino position 
-        """
-        print(f"[Set positions]: M BA{baseAngle} R{rotation} ER{endRotation} EA{endAngle}")
-        response = self.queue_feedback_command(f"M BA{baseAngle} R{rotation} ER{endRotation} EA{endAngle}")
-        if response:
-            try:
-                return (response)
-            except ValueError:
-                print(f"[ERROR] Invalid error response from {self.port}: {response}")
-        return None 
     
-    def set_postition_quick(self, baseAngle, rotation, endRotation, endAngle):
+    def set_postition(self, baseAngle, rotation, endRotation, endAngle):
         """
         set arduino position 
         """
@@ -356,9 +332,88 @@ class AruinoUART(UART):
         self.ser.write(packet)
         return None
 
-    
+    def get_positions(self):
+        """
+        return individual motor positions [j1, j4, j5, j6]
+        """
+        print(f"[request joint positions]")
+        
+        packet = struct.pack(
+        '>c B c h c h c h c h',     # Format string
+        b'C', 4,                    # Command header
+        b'B', 0,            # 'B' value (16-bit)
+        b'W', 0,             # 'W' value (16-bit)
+        b'R', 0,
+        b'A', 0
+        )           
+        self.ser.write(packet)
+
+        #read incomming packet
+        packet_size = 14
+        packet = self.ser.read(packet_size)
+
+        print("Received raw data:", packet)
+
+        # Unpack the data
+        if len(packet) == packet_size:
+            unpacked_data = struct.unpack('>c B c h c h c h c h', packet)
+
+            processed_data = []
+            for item in unpacked_data:
+                if not item  in (b'C', b'B', b'W', b'R', b"A"):
+                    processed_data.append(item) 
+            processed_data.pop(0)
+
+            return processed_data #format is [j1, j4, j5, j6]
+
+        else:
+            print("[Error] Incomplete Arduino position packet received.")
+            return
+        
+
+    def get_velocities(self):
+        """
+        return individual motor velocities [j1, j4, j5, j6]
+        """
+        print(f"[request joint velocities]")
+        
+        packet = struct.pack(
+        '>c B c h c h c h c h',     # Format string
+        b'C', 5,                    # Command header (8-bit)
+        b'B', 0,            # 'B' value (16-bit)
+        b'W', 0,            # 'W' value (16-bit)
+        b'R', 0,            # 'R' value (16-bit)
+        b'A', 0             # 'A' value (16-bit)
+        )           
+        self.ser.write(packet)
+
+        #read incomming packet
+        packet_size = 14
+        packet = self.ser.read(packet_size)
+
+        print("Received raw data:", packet)
+
+        # Unpack the data
+        if len(packet) == packet_size:
+            unpacked_data = struct.unpack('>c B c h c h c h c h', packet)
+
+            processed_data = []
+            for item in unpacked_data:
+                if not item  in (b'C', b'B', b'W', b'R', b"A"):
+                    processed_data.append(item) 
+            processed_data.pop(0)
+
+            return processed_data #format is [j1, j4, j5, j6]
+
+        else:
+            print("[Error] Incomplete Arduino velocity packet received.")
+            return
+
     def close(self):
         """
         Closes the UART connection.
         """
         super().close()
+
+
+
