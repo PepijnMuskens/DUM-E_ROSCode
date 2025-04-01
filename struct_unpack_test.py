@@ -28,5 +28,11 @@ def test():
     else:
         print("Error: Incomplete packet received.")
         return
+    
+def struct_size():
+    packet_format = '>c B c h c h c h c h'
+    packet_size = struct.calcsize(packet_format)
+    print(f"struct size = {packet_size}")
 
-print(test())
+#print(test())
+struct_size()

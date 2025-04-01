@@ -337,77 +337,116 @@ class AruinoUART(UART):
         return individual motor positions [j1, j4, j5, j6]
         """
         print(f"[request joint positions]")
+
+        # Define packet format
+        packet_format = '>c B c h c h c h c h'
+        packet_size = struct.calcsize(packet_format)
+        print(f"packet size: {packet_size}")
         
         packet = struct.pack(
-        '>c B c h c h c h c h',     # Format string
-        b'C', 4,                    # Command header
+        packet_format,      # Format string
+        b'C', 4,            # Command header
         b'B', 0,            # 'B' value (16-bit)
-        b'W', 0,             # 'W' value (16-bit)
+        b'W', 0,            # 'W' value (16-bit)
         b'R', 0,
         b'A', 0
         )           
         self.ser.write(packet)
 
-        #read incomming packet
-        packet_size = 14
-        packet = self.ser.read(packet_size)
+        # Read incoming data, filtering out debug prints
+        buffer = b""
+        start_time = time.time()
 
-        print("Received raw data:", packet)
+        while time.time() - start_time < 1:  # Timeout after 0.5 seconds
+            if self.ser.in_waiting > 0:
+                buffer += self.ser.read(self.ser.in_waiting)
 
-        # Unpack the data
-        if len(packet) == packet_size:
-            unpacked_data = struct.unpack('>c B c h c h c h c h', packet)
+                # Try to locate the expected packet within the buffer
+                start_index = buffer.find(b'C')  # Look for the 'C' header
 
-            processed_data = []
-            for item in unpacked_data:
-                if not item  in (b'C', b'B', b'W', b'R', b"A"):
-                    processed_data.append(item) 
-            processed_data.pop(0)
+                if start_index != -1 and len(buffer) >= start_index + packet_size:
+                    packet = buffer[start_index:start_index + packet_size]
+                    print(f"Raw data received (wrong size): {packet}")
 
-            return processed_data #format is [j1, j4, j5, j6]
+                    # Ensure the packet matches the expected format
+                    if len(packet) == packet_size:
+                        try:
+                            print(f"Raw data received: {packet}")
+                            unpacked_data = struct.unpack(packet_format, packet)
+                            
+                            # Extract motor velocities (skip header bytes)
+                            processed_data = [item for item in unpacked_data if not isinstance(item, bytes)]
+                            processed_data.pop(0)  # Remove command ID
 
-        else:
-            print("[Error] Incomplete Arduino position packet received.")
-            return
+                            print("[INFO] Received valid joint positions:", processed_data)
+                            return processed_data
+                        except struct.error:
+                            print("[ERROR] Failed to unpack received data.")
+
+                    # Remove processed data from buffer
+                    buffer = buffer[start_index + packet_size:]
+
+        print("[ERROR] No valid position response received within timeout.")
+        return None
         
 
     def get_velocities(self):
         """
-        return individual motor velocities [j1, j4, j5, j6]
+        Returns individual motor velocities [j1, j4, j5, j6].
+        Filters out Arduino debug messages by looking for a valid response sequence.
         """
-        print(f"[request joint velocities]")
-        
-        packet = struct.pack(
-        '>c B c h c h c h c h',     # Format string
-        b'C', 5,                    # Command header (8-bit)
-        b'B', 0,            # 'B' value (16-bit)
-        b'W', 0,            # 'W' value (16-bit)
-        b'R', 0,            # 'R' value (16-bit)
-        b'A', 0             # 'A' value (16-bit)
-        )           
-        self.ser.write(packet)
+        print("[INFO] Requesting joint velocities...")
 
-        #read incomming packet
-        packet_size = 14
-        packet = self.ser.read(packet_size)
+        # Define packet format
+        packet_format = '>c B c h c h c h c h'
+        packet_size = struct.calcsize(packet_format)
+        print(f"packet size: {packet_size}")
 
-        print("Received raw data:", packet)
+        # Construct and send the request packet
+        request_packet = struct.pack(
+            packet_format,
+            b'C', 5,    # Command header
+            b'B', 0,    # 'B' value (16-bit)
+            b'W', 0,    # 'W' value (16-bit)
+            b'R', 0,    # 'R' value (16-bit)
+            b'A', 0     # 'A' value (16-bit)
+        )
+        self.ser.write(request_packet)
 
-        # Unpack the data
-        if len(packet) == packet_size:
-            unpacked_data = struct.unpack('>c B c h c h c h c h', packet)
+        # Read incoming data, filtering out debug prints
+        buffer = b""
+        start_time = time.time()
 
-            processed_data = []
-            for item in unpacked_data:
-                if not item  in (b'C', b'B', b'W', b'R', b"A"):
-                    processed_data.append(item) 
-            processed_data.pop(0)
+        while time.time() - start_time < 1:  # Timeout after 0.5 seconds
+            if self.ser.in_waiting > 0:
+                buffer += self.ser.read(self.ser.in_waiting)
 
-            return processed_data #format is [j1, j4, j5, j6]
+                # Try to locate the expected packet within the buffer
+                start_index = buffer.find(b'C')  # Look for the 'C' header
 
-        else:
-            print("[Error] Incomplete Arduino velocity packet received.")
-            return
+                if start_index != -1 and len(buffer) >= start_index + packet_size:
+                    packet = buffer[start_index:start_index + packet_size]
+
+                    # Ensure the packet matches the expected format
+                    if len(packet) == packet_size:
+                        try:
+                            print(f"Raw data received: {packet}")
+                            unpacked_data = struct.unpack(packet_format, packet)
+                            
+                            # Extract motor velocities (skip header bytes)
+                            processed_data = [item for item in unpacked_data if not isinstance(item, bytes)]
+                            processed_data.pop(0)  # Remove command ID
+
+                            print("[INFO] Received valid joint velocities:", processed_data)
+                            return processed_data
+                        except struct.error:
+                            print("[ERROR] Failed to unpack received data.")
+
+                    # Remove processed data from buffer
+                    buffer = buffer[start_index + packet_size:]
+
+        print("[ERROR] No valid velocity response received within timeout.")
+        return None
 
     def close(self):
         """
