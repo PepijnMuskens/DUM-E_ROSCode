@@ -1,10 +1,18 @@
-from uart_classes import AruinoUART
+from uart_classes import ArduinoUART
 import time
 
-arduino = AruinoUART("/dev/ttyUSB0")
+arduino = ArduinoUART("/dev/ttyUSB0")
 
+
+
+arduino.send_joint_targets_position(100, 900, 900, 900)
+arduino.send_joint_targets_velocity(10, 100, 100, 100)
+
+
+"""
 i=0
 while i <1000:
+
     print(f"joint poses:     {arduino.get_positions()}")
 
     time.sleep(2)
@@ -13,7 +21,7 @@ while i <1000:
     i = i + 1
 
     time.sleep(2)
-
+"""
 
 """
 j = 0

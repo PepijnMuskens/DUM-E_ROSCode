@@ -3,6 +3,8 @@ import threading
 import time
 import queue
 import struct
+import re
+
 
 class UART:
     def __init__(self, port, baud_rate=115200):
@@ -274,7 +276,7 @@ class ODriveUART(UART):
         super().close()
 
 
-class AruinoUART(UART):
+class ArduinoUART(UART):
     def __init__(self, port, baud_rate=115200):
         """
         Initializes an Arduino instance using a given UART port.
@@ -336,58 +338,42 @@ class AruinoUART(UART):
         """
         return individual motor positions [j1, j4, j5, j6]
         """
-        print(f"[request joint positions]")
-
-        # Define packet format
-        packet_format = '>c B c h c h c h c h'
-        packet_size = struct.calcsize(packet_format)
-        print(f"packet size: {packet_size}")
+        #print(f"[request joint positions]")
         
-        packet = struct.pack(
-        packet_format,      # Format string
-        b'C', 4,            # Command header
-        b'B', 0,            # 'B' value (16-bit)
-        b'W', 0,            # 'W' value (16-bit)
+        cmd_packet = struct.pack(
+        '>c B c h c h c h c h',  # Format: big-endian
+        b'C', 4,    # Command header
+        b'B', 0,    # Placeholders (values ignored by Arduino)
+        b'W', 0,
         b'R', 0,
         b'A', 0
-        )           
-        self.ser.write(packet)
+        )
+        self.ser.write(cmd_packet)
 
         # Read incoming data, filtering out debug prints
-        buffer = b""
         start_time = time.time()
+        start_time = time.time()
+        while time.time() - start_time < 1:
+            buffer = self.ser.read(self.ser.in_waiting).decode('ascii', 'ignore')
+        
+            if match := re.search(r'C4B(-?\d+)W(-?\d+)R(-?\d+)A(-?\d+)', buffer):
+                try:
+                    received_b = int(match.group(1))
+                    received_w = int(match.group(2))
+                    received_r = int(match.group(3))
+                    received_a = int(match.group(4))
+                
+                    # For debugging/transparency
+                    #print(f"B: {received_b}, W: {received_w}, R: {received_r}, A: {received_a}")
+                
+                    # dan nog /10 ergens
+                    return [received_b, received_w, received_r, received_a]
+                except ValueError:
+                    print("Invalid numeric values in response")
+                break
 
-        while time.time() - start_time < 1:  # Timeout after 0.5 seconds
-            if self.ser.in_waiting > 0:
-                buffer += self.ser.read(self.ser.in_waiting)
-
-                # Try to locate the expected packet within the buffer
-                start_index = buffer.find(b'C')  # Look for the 'C' header
-
-                if start_index != -1 and len(buffer) >= start_index + packet_size:
-                    packet = buffer[start_index:start_index + packet_size]
-                    print(f"Raw data received (wrong size): {packet}")
-
-                    # Ensure the packet matches the expected format
-                    if len(packet) == packet_size:
-                        try:
-                            print(f"Raw data received: {packet}")
-                            unpacked_data = struct.unpack(packet_format, packet)
-                            
-                            # Extract motor velocities (skip header bytes)
-                            processed_data = [item for item in unpacked_data if not isinstance(item, bytes)]
-                            processed_data.pop(0)  # Remove command ID
-
-                            print("[INFO] Received valid joint positions:", processed_data)
-                            return processed_data
-                        except struct.error:
-                            print("[ERROR] Failed to unpack received data.")
-
-                    # Remove processed data from buffer
-                    buffer = buffer[start_index + packet_size:]
-
-        print("[ERROR] No valid position response received within timeout.")
-        return None
+        #print("Timeout waiting for positions")
+        return [None, None, None, None]
         
 
     def get_velocities(self):
@@ -395,58 +381,80 @@ class AruinoUART(UART):
         Returns individual motor velocities [j1, j4, j5, j6].
         Filters out Arduino debug messages by looking for a valid response sequence.
         """
-        print("[INFO] Requesting joint velocities...")
+        #print("[INFO] Requesting joint velocities...")
 
-        # Define packet format
-        packet_format = '>c B c h c h c h c h'
-        packet_size = struct.calcsize(packet_format)
-        print(f"packet size: {packet_size}")
-
-        # Construct and send the request packet
-        request_packet = struct.pack(
-            packet_format,
-            b'C', 5,    # Command header
-            b'B', 0,    # 'B' value (16-bit)
-            b'W', 0,    # 'W' value (16-bit)
-            b'R', 0,    # 'R' value (16-bit)
-            b'A', 0     # 'A' value (16-bit)
+        cmd_packet = struct.pack(
+        '>c B c h c h c h c h',  # Format: big-endian
+        b'C', 5,    # Command header
+        b'B', 0,    # Placeholders (values ignored by Arduino)
+        b'W', 0,
+        b'R', 0,
+        b'A', 0
         )
-        self.ser.write(request_packet)
+        self.ser.write(cmd_packet)
 
-        # Read incoming data, filtering out debug prints
-        buffer = b""
+         # Read incoming data, filtering out debug prints
         start_time = time.time()
+        start_time = time.time()
+        while time.time() - start_time < 1:
+            buffer = self.ser.read(self.ser.in_waiting).decode('ascii', 'ignore')
+            if match := re.search(r'C5B(-?\d+)W(-?\d+)R(-?\d+)A(-?\d+)', buffer):
+                try:
+                    received_b = int(match.group(1))
+                    received_w = int(match.group(2))
+                    received_r = int(match.group(3))
+                    received_a = int(match.group(4))
+                
+                    # For debugging/transparency
+                    #print(f"B: {received_b}, W: {received_w}, R: {received_r}, A: {received_a}")
+                
+                    # dan nog /10 ergens
+                    return [received_b, received_w, received_r, received_a]
+                except ValueError:
+                    print("Invalid numeric values in response")
+                break
 
-        while time.time() - start_time < 1:  # Timeout after 0.5 seconds
-            if self.ser.in_waiting > 0:
-                buffer += self.ser.read(self.ser.in_waiting)
-
-                # Try to locate the expected packet within the buffer
-                start_index = buffer.find(b'C')  # Look for the 'C' header
-
-                if start_index != -1 and len(buffer) >= start_index + packet_size:
-                    packet = buffer[start_index:start_index + packet_size]
-
-                    # Ensure the packet matches the expected format
-                    if len(packet) == packet_size:
-                        try:
-                            print(f"Raw data received: {packet}")
-                            unpacked_data = struct.unpack(packet_format, packet)
-                            
-                            # Extract motor velocities (skip header bytes)
-                            processed_data = [item for item in unpacked_data if not isinstance(item, bytes)]
-                            processed_data.pop(0)  # Remove command ID
-
-                            print("[INFO] Received valid joint velocities:", processed_data)
-                            return processed_data
-                        except struct.error:
-                            print("[ERROR] Failed to unpack received data.")
-
-                    # Remove processed data from buffer
-                    buffer = buffer[start_index + packet_size:]
-
-        print("[ERROR] No valid velocity response received within timeout.")
+        #print("Timeout waiting for positions")
+        return [None, None, None, None]
+    
+    def send_joint_targets_velocity(self, joint1, joint4, joint5, joint6):
+        """
+        set arduino positions format: 
+        ```python
+        [vel_joint1, vel_joint4, vel_joint5, vel_joint6] 
+        ```
+        """
+        
+        packet = struct.pack(
+        '>c B c h c h c h c h',     # Format string
+        b'C', 6,                    # Command header
+        b'B', joint1,               # 'B' value (16-bit)
+        b'W', joint4,               # 'W' value (16-bit)
+        b'R', joint5,
+        b'A', joint6
+        )           
+        self.ser.write(packet)
         return None
+
+    def send_joint_targets_position(self, joint1, joint4, joint5, joint6):
+        """
+        set arduino position
+        ```python
+        [pos_joint1, pos_joint4, pos_joint5, pos_joint6] 
+        ```
+        """
+        
+        packet = struct.pack(
+        '>c B c h c h c h c h',     # Format string
+        b'C', 7,                    # Command header
+        b'B', joint1,               # 'B' value (16-bit)
+        b'W', joint4,               # 'W' value (16-bit)
+        b'R', joint5,
+        b'A', joint6
+        )           
+        self.ser.write(packet)
+        return None
+
 
     def close(self):
         """
